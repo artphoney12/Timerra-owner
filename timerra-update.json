@@ -1,67 +1,69 @@
 {
-  "app": "Timerra",
-  "latestVersion": "0.1.0",
-  "minSupportedVersion": "0.1.0",
-  "publishedAt": "2026-06-26",
-  "package": {
-    "fileName": "Timerra_Local_Portable.rar",
-    "url": "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-    "sha256": "fcc3348f56ed2ee66bdcb61cfbd0d970bd759a43dae1f51438bf657de844de10",
-    "sizeBytes": 81550206,
-    "compression": "rar",
-    "extractor": "unrar",
-    "requiresPassword": true,
-    "encryptedFileNames": true
-  },
-  "targets": {
-    "server": {
-      "portableDir": "Timerra_Server_Portable",
-      "executable": "Timerra Server.exe",
-      "replace": [
-        "Timerra Server.exe",
-        "Timerra Server Core.exe",
-        "Timerra Updater.exe",
-        "web/operator/**",
-        "db/migrations/**",
-        "tools/**",
-        "third_party/**"
-      ],
-      "preserve": [
-        "config/**",
-        "database/data/**",
-        "backups/**",
-        "logs/**",
-        "exports/**"
-      ]
-    },
-    "kasir": {
-      "portableDir": "Timerra_Kasir_Portable",
-      "executable": "Timerra Kasir.exe",
-      "replace": [
-        "Timerra Kasir.exe",
-        "Timerra Updater.exe"
-      ],
-      "preserve": [
-        "config/**",
-        "logs/**"
-      ]
-    },
-    "app": {
-      "portableDir": "Timerra_App_Portable",
-      "executable": "Timerra App.exe",
-      "replace": [
-        "Timerra App.exe",
-        "Timerra Updater.exe"
-      ],
-      "preserve": [
-        "config/**",
-        "logs/**"
-      ]
-    }
-  },
-  "notes": [
-    "Rilis awal manifest update Timerra.",
-    "Self updater memakai paket Timerra_Local_Portable.rar terenkripsi.",
-    "Config, database, backup, log, dan export tidak ikut ditimpa."
-  ]
+    "app":  "Timerra",
+    "latestVersion":  "0.1.1",
+    "minSupportedVersion":  "0.1.0",
+    "publishedAt":  "2026-06-26",
+    "package":  {
+                    "fileName":  "Timerra_Local_Portable.rar",
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
+                    "sha256":  "6afa44071ffa68bfcce9c0772fbcca58c41e2e7f6d42f2ebb05ebf4d759ee40c",
+                    "sizeBytes":  81492094,
+                    "compression":  "rar",
+                    "extractor":  "unrar",
+                    "requiresPassword":  true,
+                    "encryptedFileNames":  true
+                },
+    "targets":  {
+                    "server":  {
+                                   "portableDir":  "Timerra_Server_Portable",
+                                   "executable":  "Timerra Server.exe",
+                                   "replace":  [
+                                                   "Timerra Server.exe",
+                                                   "Timerra Server Core.exe",
+                                                   "Timerra Updater.exe",
+                                                   "web/operator/**",
+                                                   "web/server-manager/**",
+                                                   "db/migrations/**",
+                                                   "tools/**",
+                                                   "third_party/**"
+                                               ],
+                                   "preserve":  [
+                                                    "config/**",
+                                                    "database/data/**",
+                                                    "backups/**",
+                                                    "logs/**",
+                                                    "exports/**"
+                                                ]
+                               },
+                    "kasir":  {
+                                  "portableDir":  "Timerra_Kasir_Portable",
+                                  "executable":  "Timerra Kasir.exe",
+                                  "replace":  [
+                                                  "Timerra Kasir.exe",
+                                                  "Timerra Updater.exe"
+                                              ],
+                                  "preserve":  [
+                                                   "config/**",
+                                                   "logs/**"
+                                               ]
+                              },
+                    "app":  {
+                                "portableDir":  "Timerra_App_Portable",
+                                "executable":  "Timerra App.exe",
+                                "replace":  [
+                                                "Timerra App.exe",
+                                                "Timerra Updater.exe"
+                                            ],
+                                "preserve":  [
+                                                 "config/**",
+                                                 "logs/**"
+                                             ]
+                            }
+                },
+    "notes":  [
+                  "Dashboard Server tidak lagi menampilkan URL LAN untuk APK TV.",
+                  "Folder Portable di Server sekarang punya tombol copy path.",
+                  "Self updater memakai paket Timerra_Local_Portable.rar terenkripsi.",
+                  "Config, database, backup, log, dan export tidak ikut ditimpa."
+              ]
 }
