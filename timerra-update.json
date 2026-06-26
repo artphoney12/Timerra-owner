@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.7",
+    "latestVersion":  "1.0.8",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-26",
-    "buildLabel":  "v20260626-1940",
+    "buildLabel":  "v20260626-2014",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "7188ed9be224186ebb4ad9a0eb16636708b946c594cc5bd38a644b8aa1e711a1",
-                    "sizeBytes":  107913886,
+                    "sha256":  "12d2012550e0f1fbd19278af3188e87d187196dff1d594209be8f67585117477",
+                    "sizeBytes":  107908126,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,10 +62,9 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.7 dengan build label v20260626-1940.",
-                  "Timerra Server memakai port PostgreSQL internal 55432 agar tidak bentrok dengan PostgreSQL lain di PC tujuan.",
-                  "Recovery password PostgreSQL portable diperkuat dengan mode trust sementara dan psql non-prompt supaya startup tidak menggantung di password prompt.",
-                  "UnRAR.exe sekarang ikut di paket portable supaya self updater RAR bisa berjalan di PC lain tanpa WinRAR terpasang.",
-                  "Timerra Server kini menampilkan changelog ketika Cek Update menemukan manifest terbaru."
+                  "Versi 1.0.8 dengan build label v20260626-2014.",
+                  "Changelog Timerra Server sekarang memakai tanda minus ASCII supaya tidak muncul mojibake.",
+                  "Timerra Server tetap memakai port PostgreSQL internal 55432 dan recovery password non-prompt.",
+                  "UnRAR.exe tetap ikut di paket portable untuk self updater RAR."
               ]
 }
