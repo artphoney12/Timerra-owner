@@ -1,13 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "0.1.1",
+    "latestVersion":  "0.1.2",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-26",
+    "buildLabel":  "v20260626-0533",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "6afa44071ffa68bfcce9c0772fbcca58c41e2e7f6d42f2ebb05ebf4d759ee40c",
-                    "sizeBytes":  81492094,
+                    "sha256":  "41e470031e4d921a7c5c09ee72eede99fd67253df98589308351fcb3008f1aea",
+                    "sizeBytes":  81469118,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -61,6 +62,7 @@
                             }
                 },
     "notes":  [
+                  "Sidebar semua EXE menampilkan build label v20260626-0533.",
                   "Dashboard Server tidak lagi menampilkan URL LAN untuk APK TV.",
                   "Folder Portable di Server sekarang punya tombol copy path.",
                   "Self updater memakai paket Timerra_Local_Portable.rar terenkripsi.",
