@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.4",
+    "latestVersion":  "1.0.5",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-26",
-    "buildLabel":  "v20260626-1401",
+    "buildLabel":  "v20260626-1559",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "ecee42189d73f7ac045cc33b0ae8281a4db5cc319e2cc34d1ed435f6585a526a",
-                    "sizeBytes":  107663070,
+                    "sha256":  "2d40b4901300bf95b3e2d06f647ef8c0d45659f0bdae30275d55d8a097fc9006",
+                    "sizeBytes":  107661806,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,8 +62,10 @@
                             }
                 },
     "notes":  [
-                  "Sidebar semua EXE menampilkan build label v20260626-1401.",
-                  "Versi aplikasi source dan paket update disinkronkan ke 1.0.4.",
+                  "Sidebar semua EXE menampilkan build label v20260626-1559.",
+                  "Versi aplikasi source dan paket update disinkronkan ke 1.0.5.",
+                  "Timerra Server otomatis recovery password PostgreSQL portable jika data lama dipindah PC dan password tidak cocok.",
+                  "Paket update tidak membawa config\\\\secrets.dat agar rahasia database lokal tidak ikut dari PC pembuat paket.",
                   "7-Zip portable dibundel permanen di Timerra Server tools\\\\7zip untuk fitur kompres backup.",
                   "Build portable otomatis menyalin tools\\\\7zip sehingga tidak hilang saat release dibuat ulang.",
                   "Paket update RAR mengecualikan database runtime, log, backup, dan export lokal agar data operasional tidak ikut tertimpa.",
