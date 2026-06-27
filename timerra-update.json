@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.25",
+    "latestVersion":  "1.0.26",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-0239",
+    "buildLabel":  "v20260628-0322",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "db7a5468b5106cc2ed12b4166c5d0e2b4922c2d5700581cb9b84787f3862b4da",
-                    "sizeBytes":  79573102,
+                    "sha256":  "5d792cccc2154e9a64243acd1d7a202ab6d1890a37605d932d374d22bb063efc",
+                    "sizeBytes":  108911246,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,11 +62,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.25 dengan label sidebar v20260628-0239/1.0.25.",
-                  "Detail rules paket Kasir dan Timerra App memakai floating layer agar tidak kepotong panel/modal.",
-                  "Menu Update Timerra manual dihapus dari Server, Kasir, dan Timerra App.",
-                  "Semua EXE sekarang mengecek update saat dibuka, lalu lanjut otomatis jika sudah versi terbaru.",
-                  "Proses update memakai download .part, verifikasi SHA256, lock update, state file, staging, rollback, dan helper restart.",
+                  "Versi 1.0.26 dengan label sidebar v20260628-0322/1.0.26.",
+                  "Kasir otomatis refresh setelah Proses Billing, isi paket member, dan order Cafetaria berhasil.",
+                  "Server Manager ikut refresh dari event server sehingga status dashboard lebih cepat ikut berubah setelah transaksi.",
+                  "Card paket Kasir dan Timerra App menampilkan tanggal tertentu secara ringkas: Belum bisa dibeli / Tersedia tgl X.",
+                  "Tanggal lengkap tetap tersedia di detail paket melalui tombol info.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, atau export lokal."
               ]
 }
