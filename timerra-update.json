@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.24",
+    "latestVersion":  "1.0.25",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-0205",
+    "buildLabel":  "v20260628-0239",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "0111ca685ee6d0f3db0f6ab8db1ca3cf175990028c415a46ce59074f13142ac4",
-                    "sizeBytes":  108902926,
+                    "sha256":  "db7a5468b5106cc2ed12b4166c5d0e2b4922c2d5700581cb9b84787f3862b4da",
+                    "sizeBytes":  79573102,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,11 +62,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.24 dengan label sidebar v20260628-0205/1.0.24.",
-                  "Card paket Kasir dan Timerra App dibuat lebih ringkas.",
-                  "Detail rules paket sekarang tampil lewat ikon info kecil di card.",
-                  "Info lengkap rules memakai warna berbeda untuk stok, tanggal, jam, limit member, masa aktif, bonus poin, dan redeem poin.",
-                  "Kalimat detail diperjelas, seperti sisa stok paket, bonus poin pembelian, dan kebutuhan poin redeem.",
+                  "Versi 1.0.25 dengan label sidebar v20260628-0239/1.0.25.",
+                  "Detail rules paket Kasir dan Timerra App memakai floating layer agar tidak kepotong panel/modal.",
+                  "Menu Update Timerra manual dihapus dari Server, Kasir, dan Timerra App.",
+                  "Semua EXE sekarang mengecek update saat dibuka, lalu lanjut otomatis jika sudah versi terbaru.",
+                  "Proses update memakai download .part, verifikasi SHA256, lock update, state file, staging, rollback, dan helper restart.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, atau export lokal."
               ]
 }
