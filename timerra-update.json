@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.15",
+    "latestVersion":  "1.0.16",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-27",
-    "buildLabel":  "v20260627-0913",
+    "buildLabel":  "v20260627-0946",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "073c4a361e3416adbccfb8e6bbf2e5ad9445acff74fcb0cfef0a42eb1610fac4",
-                    "sizeBytes":  108297294,
+                    "sha256":  "624cbfad38e3e60e37cfe3c1ffa579a5e1d6d044ada6c9cd05ddf6f597e53690",
+                    "sizeBytes":  108331662,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,10 +62,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.15 dengan build label v20260627-0913.",
-                  "Laporan transaksi dan transaksi shift kini menampilkan pasangan void lebih ringkas: transaksi asli dan record void ditampilkan sebagai satu baris VOID.",
-                  "Detail transaksi tetap menyimpan audit lengkap: waktu void, user void, alasan void, pengurang shift, net tunai/saldo, dan efek member bila transaksi member.",
-                  "Konfirmasi Tutup Shift sekarang menampilkan total nominal shift aktif dan ringkasan void sebelum shift ditutup.",
+                  "Versi 1.0.16 dengan build label v20260627-0946.",
+                  "Menu Update Timerra di Server menambahkan tiga toggle silent auto update: Server, Kasir, dan Timerra App.",
+                  "Auto update berjalan diam-diam setiap jam online pada menit 00 memakai Trusted Online Time dari server, bukan jam lokal PC.",
+                  "Kasir dan Timerra App mengikuti toggle dari Server; tidak ada popup atau notifikasi jika tidak ada update.",
+                  "Jika auto update diproses, event dicatat ke log server tanpa mengganggu layar Kasir/App.",
                   "Paket update dibuat dari staging bersih supaya tidak membawa database aktif, rclone.conf, atau secrets.dat lokal."
               ]
 }
