@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.17",
+    "latestVersion":  "1.0.18",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-27",
-    "buildLabel":  "v20260627-1045",
+    "buildLabel":  "v20260627-2046",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "65b469c7fc4fe7f5e4495a3d8c885c839c75686d649134ad27bda99edef314d2",
-                    "sizeBytes":  80723502,
+                    "sha256":  "8a9f07fc23c78aa2f6a7c3c407dad89fe95a6cdd1d0c89e4fdd5a6c19d8eab35",
+                    "sizeBytes":  80722014,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,11 +62,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.17 dengan build label v20260627-1045.",
-                  "Server Manager menambahkan tombol Update Server Now, Update Kasir Now, dan Update App Now.",
-                  "Update Kasir dan Timerra App dari Server dikirim sebagai request silent, lalu dieksekusi oleh exe client yang sedang terbuka dan terhubung.",
-                  "Policy auto update sekarang dibaca fresh agar toggle dan request update dari Server langsung terbaca.",
-                  "Progress self update Server diperbaiki memakai event progress yang sama dengan Kasir dan Timerra App.",
+                  "Versi 1.0.18 dengan build label v20260627-2046.",
+                  "UI self update Kasir disamakan dengan Timerra App: tiga kartu info, status di header, catatan update langsung, dan tombol aksi penuh.",
+                  "UI self update Server disamakan dengan Timerra App untuk update Server, dengan aksi tambahan Update Kasir Now dan Update App Now.",
+                  "Animasi progress self update Server/Kasir tetap memakai modal progress Timerra yang sama dengan Timerra App.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, atau export lokal."
               ]
 }
