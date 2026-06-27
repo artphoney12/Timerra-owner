@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.18",
+    "latestVersion":  "1.0.19",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-27",
-    "buildLabel":  "v20260627-2046",
+    "buildLabel":  "v20260627-2114",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "8a9f07fc23c78aa2f6a7c3c407dad89fe95a6cdd1d0c89e4fdd5a6c19d8eab35",
-                    "sizeBytes":  80722014,
+                    "sha256":  "8b41b68b19304c651f9425b7c718be8688e0757a92725f9b5434f6f8d9f3945b",
+                    "sizeBytes":  80711182,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,10 +62,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.18 dengan build label v20260627-2046.",
-                  "UI self update Kasir disamakan dengan Timerra App: tiga kartu info, status di header, catatan update langsung, dan tombol aksi penuh.",
-                  "UI self update Server disamakan dengan Timerra App untuk update Server, dengan aksi tambahan Update Kasir Now dan Update App Now.",
-                  "Animasi progress self update Server/Kasir tetap memakai modal progress Timerra yang sama dengan Timerra App.",
+                  "Versi 1.0.19 dengan build label v20260627-2114.",
+                  "Helper self update diperkuat: menunggu file aplikasi benar-benar lepas, retry copy saat file masih lock, dan membuka ulang aplikasi lama jika update gagal.",
+                  "Kasir dan Timerra App sekarang membawa tools UnRAR portable sendiri agar update tidak bergantung pada WinRAR/UnRAR yang terpasang di Windows.",
+                  "Updater menulis log target ke folder logs, misalnya timerra-updater-kasir.log, supaya kegagalan update lebih mudah dilacak.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, atau export lokal."
               ]
 }
