@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.20",
+    "latestVersion":  "1.0.21",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-27",
-    "buildLabel":  "v20260627-2206",
+    "buildLabel":  "v20260627-2328",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "c0330b9a3726606cd95f06cc09959b8f034d17e5c0e26306dbbe2efc6145de5f",
-                    "sizeBytes":  108878766,
+                    "sha256":  "2950c84d09e92da1d01c8098e403e82125ccb842a8c1ea465a86fc44b0991d32",
+                    "sizeBytes":  108896110,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,11 +62,13 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.20 dengan build label v20260627-2206.",
-                  "Paket durasi dan paket jam fix sekarang bisa memakai stok pembelian, limit beli per member, range tanggal pembelian, range jam pembelian, dan tanggal promo tertentu.",
-                  "Kasir dan Timerra App menampilkan info stok, jadwal beli, tanggal promo, dan limit member pada kartu paket/produk dengan validasi backend yang sama.",
-                  "Produk Cafetaria sekarang bisa diberi rules jadwal pembelian, dan paket/produk bisa dicopy agar pembuatan promo lebih cepat dengan nama baru wajib berbeda.",
-                  "Migration database 017_purchase_rules ditambahkan; backup/restore tetap membawa skema dan data baru karena seluruh database ikut dibackup.",
+                  "Versi 1.0.21 dengan build label v20260627-2328.",
+                  "Rules pembelian paket dan produk sekarang memakai Atur tanggal pembelian dengan mode Range tanggal atau Tanggal tertentu berbasis tanggal lengkap.",
+                  "Kasir dan Timerra App menampilkan badge rules pembelian yang lebih tegas untuk stok, tanggal, jam, limit member, bonus poin, dan redeem poin.",
+                  "Di Kasir, info poin/redeem/limit member disembunyikan ketika fitur member dimatikan oleh admin; Timerra App tetap menampilkan info poin untuk customer.",
+                  "Tombol paket durasi dan paket jam fix diberi warna berbeda untuk tambah, edit, copy, dan hapus; hapus paket dibuat soft-delete agar laporan lama tetap aman.",
+                  "Server Manager menampilkan log realtime terbaru di atas dengan badge role dan status, tanpa tombol Refresh Log.",
+                  "Menu Update Timerra Server menampilkan versi Kasir dan Timerra App yang online beserta nama PC dari heartbeat client.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, atau export lokal."
               ]
 }
