@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.21",
+    "latestVersion":  "1.0.22",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-06-27",
-    "buildLabel":  "v20260627-2328",
+    "publishedAt":  "2026-06-28",
+    "buildLabel":  "v20260628-0023",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "2950c84d09e92da1d01c8098e403e82125ccb842a8c1ea465a86fc44b0991d32",
-                    "sizeBytes":  108896110,
+                    "sha256":  "3d50f838eba6bb33c883cba919a5db89753901c3b8cf45ba80587fd4e6a3fc0a",
+                    "sizeBytes":  108896302,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,13 +62,12 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.21 dengan build label v20260627-2328.",
-                  "Rules pembelian paket dan produk sekarang memakai Atur tanggal pembelian dengan mode Range tanggal atau Tanggal tertentu berbasis tanggal lengkap.",
-                  "Kasir dan Timerra App menampilkan badge rules pembelian yang lebih tegas untuk stok, tanggal, jam, limit member, bonus poin, dan redeem poin.",
-                  "Di Kasir, info poin/redeem/limit member disembunyikan ketika fitur member dimatikan oleh admin; Timerra App tetap menampilkan info poin untuk customer.",
-                  "Tombol paket durasi dan paket jam fix diberi warna berbeda untuk tambah, edit, copy, dan hapus; hapus paket dibuat soft-delete agar laporan lama tetap aman.",
-                  "Server Manager menampilkan log realtime terbaru di atas dengan badge role dan status, tanpa tombol Refresh Log.",
-                  "Menu Update Timerra Server menampilkan versi Kasir dan Timerra App yang online beserta nama PC dari heartbeat client.",
+                  "Versi 1.0.22 dengan label sidebar v20260628-0023/1.0.22.",
+                  "Card paket Kasir dan Timerra App dirapikan dengan susunan judul, ruangan/durasi, badge stok/poin/redeem, info Bisa dibeli, Batas member, Berakhir, dan harga.",
+                  "Info batas member sekarang ditulis jelas: Per member hanya bisa beli Xx untuk paket ini.",
+                  "Form Tanggal tertentu di Rules Pembelian sekarang memakai tombol plus dan date picker, lalu tampil sebagai chip tanggal yang bisa dihapus.",
+                  "Layout Range tanggal dan Range jam dibuat kiri-kanan lebih rapi.",
+                  "Format versi sidebar semua exe menjadi build label/app version, contoh v20260628-0023/1.0.22.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, atau export lokal."
               ]
 }
