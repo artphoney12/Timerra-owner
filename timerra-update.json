@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.14",
+    "latestVersion":  "1.0.15",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-27",
-    "buildLabel":  "v20260627-0341",
+    "buildLabel":  "v20260627-0913",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "0334d42a288fd7de86f0c8044a0b022b31b0907af5a53b58e34383ca5453c6f4",
-                    "sizeBytes":  108292430,
+                    "sha256":  "073c4a361e3416adbccfb8e6bbf2e5ad9445acff74fcb0cfef0a42eb1610fac4",
+                    "sizeBytes":  108297294,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,14 +62,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.14 dengan build label v20260627-0341.",
-                  "Backend memakai Trusted Online Time: sinkron NTP sebagai sumber utama dan HTTPS Date header sebagai fallback; timer durasi, jam fix, shift, transaksi, dan status TV mengikuti patokan waktu server terpercaya.",
-                  "Paket jam fix dihitung memakai zona WIB/UTC+7 agar tidak ikut timezone PC yang bisa berbeda.",
-                  "Menu Admin \u0026 Operator menambahkan kontrol Jam Online dan toggle Cafetaria khusus Kasir.",
-                  "Toggle Cafetaria OFF menyembunyikan fitur cafetaria di Kasir saja; Timerra App customer tetap menampilkan fitur cafetaria.",
-                  "Kontrol mode geser dan auto-susun card TV di Kasir dihapus; kontrol ukuran card tetap tersedia.",
-                  "Ringkasan Hari Ini di Kasir sekarang show/hide hanya jika klik kiri ditahan 4 detik.",
-                  "Footer label card TV di Kasir dan Timerra App tetap satu baris kiri-kanan dengan ellipsis untuk label panjang.",
+                  "Versi 1.0.15 dengan build label v20260627-0913.",
+                  "Laporan transaksi dan transaksi shift kini menampilkan pasangan void lebih ringkas: transaksi asli dan record void ditampilkan sebagai satu baris VOID.",
+                  "Detail transaksi tetap menyimpan audit lengkap: waktu void, user void, alasan void, pengurang shift, net tunai/saldo, dan efek member bila transaksi member.",
+                  "Konfirmasi Tutup Shift sekarang menampilkan total nominal shift aktif dan ringkasan void sebelum shift ditutup.",
                   "Paket update dibuat dari staging bersih supaya tidak membawa database aktif, rclone.conf, atau secrets.dat lokal."
               ]
 }
