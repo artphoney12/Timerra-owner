@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.39",
+    "latestVersion":  "1.0.40",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-2328",
+    "publishedAt":  "2026-06-29",
+    "buildLabel":  "v20260629-0121",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "51b3a6a5464d59e9bbdb22dbbc94f4077a38030ace28f31bf1600718c114cb73",
-                    "sizeBytes":  109234958,
+                    "sha256":  "19cb0c43501e3fada8c2bdad1b7b6919f306fed343e460f72f1ab43fbc8eb805",
+                    "sizeBytes":  109227694,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,12 +62,9 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.39 dengan label sidebar v20260628-2328/1.0.39.",
-                  "Void deposit dan void poin sekarang membatalkan sesuai saldo/poin yang masih tersedia, lalu mencatat nilai yang sudah terpakai.",
-                  "Mode Void Billing Full refund dan Prorata sekarang punya tooltip penjelasan dan contoh kasus di menu Atur Akses.",
-                  "Timerra App tidak lagi menampilkan filter Semua Ruangan ganda pada pilihan paket.",
-                  "Admin dapat menyembunyikan menu Monitor TV dan Cafetaria khusus di Timerra App customer.",
-                  "Drag susunan sidebar diperbaiki agar item bisa digeser ulang dengan lebih stabil.",
+                  "Versi 1.0.40 dengan label sidebar v20260629-0121/1.0.40.",
+                  "Timerra App menampilkan sapaan Halo, username pada header setelah member login.",
+                  "Panel kecil sidebar Timerra App sekarang menampilkan Server Online dengan dot hijau pulse pelan.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
