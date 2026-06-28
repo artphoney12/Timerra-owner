@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.33",
+    "latestVersion":  "1.0.34",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-1505",
+    "buildLabel":  "v20260628-1705",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "9b74b40f0cce2421790d05e9cbb3a207fa7e6e31a5f086151548f529c02ee6dd",
-                    "sizeBytes":  109182590,
+                    "sha256":  "85b3773bfeddf32c8bc1b261cfb138c1ed0adf35c919a46697c2d9ef30a1e481",
+                    "sizeBytes":  79685790,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -20,7 +20,6 @@
                                    "executable":  "Timerra Server.exe",
                                    "replace":  [
                                                    "Timerra Server.exe",
-                                                   "Timerra Server Core.exe",
                                                    "Timerra Updater.exe",
                                                    "web/operator/**",
                                                    "web/server-manager/**",
@@ -63,11 +62,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.33 dengan label sidebar v20260628-1505/1.0.33.",
-                  "Server menyediakan cache update lokal lewat endpoint /api/update-manifest dan /api/update-package agar Kasir/App bisa update dari Server LAN, tidak selalu mengunduh langsung dari GitHub.",
-                  "Daftar Client Kasir \u0026 App di Server dirapikan: tombol paksa restart global dihapus, status update diperjelas, dan info client diperbarui otomatis.",
-                  "Progress self update menampilkan persentase, ukuran terunduh, kecepatan unduh, dan estimasi waktu.",
-                  "Download update yang terputus dibersihkan dari state/lock stale sehingga pembukaan berikutnya mengunduh ulang dari awal dan tetap verifikasi SHA256.",
-                  "Paket RAR dibuat dari staging bersih tanpa database aktif, config runtime, log, backup, export lokal, cache update, atau sesi Google Drive."
+                  "Versi 1.0.34 dengan label sidebar v20260628-1705/1.0.34.",
+                  "Menu Member menambahkan withdraw saldo, tambah poin manual dengan masa aktif opsional, serta tab Saldo \u0026 Poin untuk audit ringkas.",
+                  "Void deposit member dan void poin member ditambahkan dengan permission terpisah dan audit transaksi tetap jelas.",
+                  "Backend menambahkan ledger poin ke app-data dan index database baru untuk mempercepat audit wallet/poin.",
+                  "Backup, restore, dan database cleaner tetap membawa struktur ledger saldo/poin; cleaner financial/members ikut membersihkan ledger terkait sesuai kategori.",
+                  "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
