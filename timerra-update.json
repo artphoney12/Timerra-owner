@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.35",
+    "latestVersion":  "1.0.38",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-1804",
+    "buildLabel":  "v20260628-2044",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "c024d55e4fea2d66698ce20815826193be9d0eb296a0d1e904a455b0884f95c4",
-                    "sizeBytes":  79682750,
+                    "sha256":  "0b86c0949b8656c1a2f5e9e245626f63ade43083276d2079acd53902b6778a01",
+                    "sizeBytes":  109107646,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,11 +62,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.35 dengan label sidebar v20260628-1804/1.0.35.",
-                  "Akses void billing sekarang memakai satu pilihan mode: tidak boleh void, full refund, atau prorata.",
-                  "Void prorata menghitung sisa jam penuh, lalu membulatkan refund ke nominal bersih kelipatan 500/1000; contoh 5 jam Rp 22.000 sisa 2 jam menjadi refund Rp 9.000.",
-                  "Detail transaksi/laporan void menampilkan mode void, jam terpakai yang dihitung, refund mentah, dan refund final.",
-                  "Fix setup Kasir/Timerra App agar cek update tidak memunculkan error textContent saat elemen status belum tersedia.",
+                  "Versi 1.0.38 dengan label sidebar v20260628-2044/1.0.38.",
+                  "Timerra App menampilkan Tanpa kedaluwarsa jika masa aktif poin dimatikan; tanggal expiry lama tidak lagi muncul.",
+                  "Backend tidak lagi menghanguskan poin saat fitur masa aktif poin dimatikan, dan membersihkan tanggal expiry saat toggle dimatikan.",
+                  "Timerra App mendapat filter tipe ruangan pada tab Paket: Semua Ruangan, Reguler, VIP, dan tipe ruangan custom.",
+                  "Admin dapat mengatur urutan sidebar Kasir dan Timerra App dari menu Admin \u0026 Operator.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
