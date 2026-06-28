@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.28",
+    "latestVersion":  "1.0.29",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-1030",
+    "buildLabel":  "v20260628-1116",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "eb5e2c6b335729b469365e9a5ffff786b2186523f492895773a8a6ddeee6b63b",
-                    "sizeBytes":  109119246,
+                    "sha256":  "bd2dedd15ab4406d278d34940e0b38925e33a739529aae7ea8f3effc5ed03e1c",
+                    "sizeBytes":  109118446,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,12 +62,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.28 dengan label sidebar v20260628-1030/1.0.28.",
-                  "Kasir dan Timerra App tidak menyimpan sesi login setelah aplikasi ditutup; buka ulang wajib login lagi.",
-                  "Jumlah paket durasi dikunci angka saja dan otomatis dibatasi sesuai sisa stok pembelian.",
-                  "Admin APK TV dibuat lebih minimalis: data koneksi tampil sebagai teks, edit lewat tombol pensil, IP memakai kotak angka dengan titik tetap, port angka saja, dan simpan per field.",
-                  "Server Manager menambahkan toggle Auto Update Server beserta interval cek update.",
-                  "Progress self update Server dibuat bergerak selama download/extract/install supaya tidak terlihat diam di 1%.",
+                  "Versi 1.0.29 dengan label sidebar v20260628-1116/1.0.29.",
+                  "Client Kasir dan Timerra App sekarang mengirim heartbeat juga dari layar koneksi/setup, jadi Server Manager bisa mendeteksi EXE yang sudah terbuka walaupun belum login ke panel.",
+                  "Heartbeat client menyimpan nama PC, IP, versi, build label, dan waktu terakhir online.",
+                  "Panel Client Kasir \u0026 App menampilkan Nama PC dan IP, serta hanya menampilkan client yang online dalam 2 menit terakhir.",
+                  "Paksa Restart Kasir/App bisa diterima dari layar koneksi/setup maupun dari panel web yang sudah terbuka.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, atau export lokal."
               ]
 }
