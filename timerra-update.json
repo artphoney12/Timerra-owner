@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.31",
+    "latestVersion":  "1.0.32",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-1322",
+    "buildLabel":  "v20260628-1414",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "ccb7fc43dcdcc530b85f720bffc57d5c8fbc4af262d2dcfe1fe7638f415658d1",
-                    "sizeBytes":  109028734,
+                    "sha256":  "31aad08d535a5530455c3ad20a024576dce56adf4ac37a09a3145801e7ecd56a",
+                    "sizeBytes":  109159022,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,12 +62,9 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.31 dengan label sidebar v20260628-1322/1.0.31.",
-                  "Kasir dan Timerra App sekarang mengirim heartbeat native dari EXE, sehingga Server bisa membaca nama PC, IP, versi, dan status online tanpa bergantung pada halaman web.",
-                  "Paksa Restart Kasir/App diperkuat dengan background agent dan anti restart-loop per request ID.",
-                  "Endpoint heartbeat dan Server Manager otomatis membuat tabel timerra_clients jika DB lama belum memiliki tabel tersebut.",
-                  "Menu Riwayat TV ditambahkan untuk audit TV ramai/sepi, sesi member/non-member, pendapatan, durasi, dan MAINTENANCE per periode.",
-                  "Rules pembelian mendukung Jam Tertentu dengan tampilan ringkas dan detail hover yang konsisten di Kasir dan Timerra App.",
+                  "Versi 1.0.32 dengan label sidebar v20260628-1414/1.0.32.",
+                  "Tooltip keterangan akses di modal Atur Akses sekarang tampil sebagai ikon info kecil di kanan tiap akses.",
+                  "Ikon tooltip akses diperbaiki agar tidak memakai posisi absolut dari card paket, sehingga tidak hilang atau menumpuk di modal.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, data runtime, log, backup, export lokal, atau sesi Google Drive."
               ]
 }
