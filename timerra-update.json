@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.34",
+    "latestVersion":  "1.0.35",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-1705",
+    "buildLabel":  "v20260628-1804",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "85b3773bfeddf32c8bc1b261cfb138c1ed0adf35c919a46697c2d9ef30a1e481",
-                    "sizeBytes":  79685790,
+                    "sha256":  "c024d55e4fea2d66698ce20815826193be9d0eb296a0d1e904a455b0884f95c4",
+                    "sizeBytes":  79682750,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,11 +62,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.34 dengan label sidebar v20260628-1705/1.0.34.",
-                  "Menu Member menambahkan withdraw saldo, tambah poin manual dengan masa aktif opsional, serta tab Saldo \u0026 Poin untuk audit ringkas.",
-                  "Void deposit member dan void poin member ditambahkan dengan permission terpisah dan audit transaksi tetap jelas.",
-                  "Backend menambahkan ledger poin ke app-data dan index database baru untuk mempercepat audit wallet/poin.",
-                  "Backup, restore, dan database cleaner tetap membawa struktur ledger saldo/poin; cleaner financial/members ikut membersihkan ledger terkait sesuai kategori.",
+                  "Versi 1.0.35 dengan label sidebar v20260628-1804/1.0.35.",
+                  "Akses void billing sekarang memakai satu pilihan mode: tidak boleh void, full refund, atau prorata.",
+                  "Void prorata menghitung sisa jam penuh, lalu membulatkan refund ke nominal bersih kelipatan 500/1000; contoh 5 jam Rp 22.000 sisa 2 jam menjadi refund Rp 9.000.",
+                  "Detail transaksi/laporan void menampilkan mode void, jam terpakai yang dihitung, refund mentah, dan refund final.",
+                  "Fix setup Kasir/Timerra App agar cek update tidak memunculkan error textContent saat elemen status belum tersedia.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
