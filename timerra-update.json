@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.27",
+    "latestVersion":  "1.0.28",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-0358",
+    "buildLabel":  "v20260628-1030",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "0e6718538a8f4326bbfb491c689bf3f8fda35341e407ad473c2c56d7c49c48d2",
-                    "sizeBytes":  108947870,
+                    "sha256":  "eb5e2c6b335729b469365e9a5ffff786b2186523f492895773a8a6ddeee6b63b",
+                    "sizeBytes":  109119246,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,10 +62,12 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.27 dengan label sidebar v20260628-0358/1.0.27.",
-                  "Card paket Kasir dan Timerra App menampilkan aturan tanggal tertentu secara ringkas sebagai Tanggal Tertentu.",
-                  "Server Manager menambahkan panel Client Kasir \u0026 App dengan tombol Paksa Restart Kasir dan Paksa Restart App.",
-                  "Kasir dan Timerra App memproses request restart dari server, membuka ulang exe, lalu menjalankan cek update saat startup.",
+                  "Versi 1.0.28 dengan label sidebar v20260628-1030/1.0.28.",
+                  "Kasir dan Timerra App tidak menyimpan sesi login setelah aplikasi ditutup; buka ulang wajib login lagi.",
+                  "Jumlah paket durasi dikunci angka saja dan otomatis dibatasi sesuai sisa stok pembelian.",
+                  "Admin APK TV dibuat lebih minimalis: data koneksi tampil sebagai teks, edit lewat tombol pensil, IP memakai kotak angka dengan titik tetap, port angka saja, dan simpan per field.",
+                  "Server Manager menambahkan toggle Auto Update Server beserta interval cek update.",
+                  "Progress self update Server dibuat bergerak selama download/extract/install supaya tidak terlihat diam di 1%.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, atau export lokal."
               ]
 }
