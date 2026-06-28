@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.32",
+    "latestVersion":  "1.0.33",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-1414",
+    "buildLabel":  "v20260628-1505",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "31aad08d535a5530455c3ad20a024576dce56adf4ac37a09a3145801e7ecd56a",
-                    "sizeBytes":  109159022,
+                    "sha256":  "9b74b40f0cce2421790d05e9cbb3a207fa7e6e31a5f086151548f529c02ee6dd",
+                    "sizeBytes":  109182590,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -33,7 +33,8 @@
                                                     "database/data/**",
                                                     "backups/**",
                                                     "logs/**",
-                                                    "exports/**"
+                                                    "exports/**",
+                                                    "updates/**"
                                                 ]
                                },
                     "kasir":  {
@@ -62,9 +63,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.32 dengan label sidebar v20260628-1414/1.0.32.",
-                  "Tooltip keterangan akses di modal Atur Akses sekarang tampil sebagai ikon info kecil di kanan tiap akses.",
-                  "Ikon tooltip akses diperbaiki agar tidak memakai posisi absolut dari card paket, sehingga tidak hilang atau menumpuk di modal.",
-                  "Paket RAR dibuat dari staging bersih tanpa database aktif, data runtime, log, backup, export lokal, atau sesi Google Drive."
+                  "Versi 1.0.33 dengan label sidebar v20260628-1505/1.0.33.",
+                  "Server menyediakan cache update lokal lewat endpoint /api/update-manifest dan /api/update-package agar Kasir/App bisa update dari Server LAN, tidak selalu mengunduh langsung dari GitHub.",
+                  "Daftar Client Kasir \u0026 App di Server dirapikan: tombol paksa restart global dihapus, status update diperjelas, dan info client diperbarui otomatis.",
+                  "Progress self update menampilkan persentase, ukuran terunduh, kecepatan unduh, dan estimasi waktu.",
+                  "Download update yang terputus dibersihkan dari state/lock stale sehingga pembukaan berikutnya mengunduh ulang dari awal dan tetap verifikasi SHA256.",
+                  "Paket RAR dibuat dari staging bersih tanpa database aktif, config runtime, log, backup, export lokal, cache update, atau sesi Google Drive."
               ]
 }
