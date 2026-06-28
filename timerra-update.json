@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.38",
+    "latestVersion":  "1.0.39",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-28",
-    "buildLabel":  "v20260628-2044",
+    "buildLabel":  "v20260628-2328",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "0b86c0949b8656c1a2f5e9e245626f63ade43083276d2079acd53902b6778a01",
-                    "sizeBytes":  109107646,
+                    "sha256":  "51b3a6a5464d59e9bbdb22dbbc94f4077a38030ace28f31bf1600718c114cb73",
+                    "sizeBytes":  109234958,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -62,11 +62,12 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.38 dengan label sidebar v20260628-2044/1.0.38.",
-                  "Timerra App menampilkan Tanpa kedaluwarsa jika masa aktif poin dimatikan; tanggal expiry lama tidak lagi muncul.",
-                  "Backend tidak lagi menghanguskan poin saat fitur masa aktif poin dimatikan, dan membersihkan tanggal expiry saat toggle dimatikan.",
-                  "Timerra App mendapat filter tipe ruangan pada tab Paket: Semua Ruangan, Reguler, VIP, dan tipe ruangan custom.",
-                  "Admin dapat mengatur urutan sidebar Kasir dan Timerra App dari menu Admin \u0026 Operator.",
+                  "Versi 1.0.39 dengan label sidebar v20260628-2328/1.0.39.",
+                  "Void deposit dan void poin sekarang membatalkan sesuai saldo/poin yang masih tersedia, lalu mencatat nilai yang sudah terpakai.",
+                  "Mode Void Billing Full refund dan Prorata sekarang punya tooltip penjelasan dan contoh kasus di menu Atur Akses.",
+                  "Timerra App tidak lagi menampilkan filter Semua Ruangan ganda pada pilihan paket.",
+                  "Admin dapat menyembunyikan menu Monitor TV dan Cafetaria khusus di Timerra App customer.",
+                  "Drag susunan sidebar diperbaiki agar item bisa digeser ulang dengan lebih stabil.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
