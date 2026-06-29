@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.40",
+    "latestVersion":  "1.0.42",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-29",
-    "buildLabel":  "v20260629-0121",
+    "buildLabel":  "v20260629-0241",
     "package":  {
                     "fileName":  "Timerra_Local_Portable.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "19cb0c43501e3fada8c2bdad1b7b6919f306fed343e460f72f1ab43fbc8eb805",
-                    "sizeBytes":  109227694,
+                    "sha256":  "f17897bdab5edc45a606d6a9005a40359523537eb1ed7bf7c8ec568d3dbe5470",
+                    "sizeBytes":  79732926,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -25,7 +25,8 @@
                                                    "web/server-manager/**",
                                                    "db/migrations/**",
                                                    "tools/**",
-                                                   "third_party/**"
+                                                   "third_party/**",
+                                                   "web/report/**"
                                                ],
                                    "preserve":  [
                                                     "config/**",
@@ -62,9 +63,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.40 dengan label sidebar v20260629-0121/1.0.40.",
-                  "Timerra App menampilkan sapaan Halo, username pada header setelah member login.",
-                  "Panel kecil sidebar Timerra App sekarang menampilkan Server Online dengan dot hijau pulse pelan.",
+                  "Versi 1.0.42 dengan label sidebar v20260629-0241/1.0.42.",
+                  "Menambahkan Web Report di port 3001 dengan login admin/kasir dan akses Buka Web Report.",
+                  "Web Report menampilkan ringkasan transaksi, rekap shift, paket terjual, TV paling laku, member aktif belanja, metode pembayaran, dan filter tanggal/jam.",
+                  "Menambahkan tombol Web Report di menu Laporan Kasir yang membuka browser default ke port 3001.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
