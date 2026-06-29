@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.43",
+    "latestVersion":  "1.0.44",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-29",
-    "buildLabel":  "v20260629-1043",
+    "buildLabel":  "v20260629-1212",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "182888185d6e7157e23363f30368bb4a20879852390c3e2e6b2f10d45051627f",
-                    "sizeBytes":  79756414,
+                    "sha256":  "5e408a448fb4b98ae2cc02c8a2490ef0c4048754fdc42ea58ca6197d30c09837",
+                    "sizeBytes":  79750398,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -63,10 +63,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.43 dengan label sidebar v20260629-1043/1.0.43.",
-                  "Server menyimpan paket update lokal di updates/cache setelah update berhasil sehingga Kasir/App bisa update dari LAN lebih dulu.",
-                  "Kasir dan Timerra App mencoba manifest/package dari Server lokal terlebih dahulu, lalu fallback ke GitHub jika cache lokal gagal.",
-                  "Nama paket update GitHub disederhanakan menjadi Timerra.rar.",
+                  "Versi 1.0.44 dengan label sidebar v20260629-1212/1.0.44.",
+                  "Kasir refresh data satu kali setelah login dan selalu masuk awal ke Monitor TV.",
+                  "Timerra App refresh data satu kali setelah login member dan selalu masuk awal ke Paket.",
+                  "Ringkasan Hari Ini kini toggle show/hide dengan tahan klik 2 detik.",
+                  "Batas void 5 menit kini dihitung dari 5 menit pertama pemakaian paket, bukan sisa timer.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
