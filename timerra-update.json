@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.42",
+    "latestVersion":  "1.0.43",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-29",
-    "buildLabel":  "v20260629-0241",
+    "buildLabel":  "v20260629-1043",
     "package":  {
-                    "fileName":  "Timerra_Local_Portable.rar",
-                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra_Local_Portable.rar",
-                    "sha256":  "f17897bdab5edc45a606d6a9005a40359523537eb1ed7bf7c8ec568d3dbe5470",
-                    "sizeBytes":  79732926,
+                    "fileName":  "Timerra.rar",
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
+                    "sha256":  "182888185d6e7157e23363f30368bb4a20879852390c3e2e6b2f10d45051627f",
+                    "sizeBytes":  79756414,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -63,10 +63,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.42 dengan label sidebar v20260629-0241/1.0.42.",
-                  "Menambahkan Web Report di port 3001 dengan login admin/kasir dan akses Buka Web Report.",
-                  "Web Report menampilkan ringkasan transaksi, rekap shift, paket terjual, TV paling laku, member aktif belanja, metode pembayaran, dan filter tanggal/jam.",
-                  "Menambahkan tombol Web Report di menu Laporan Kasir yang membuka browser default ke port 3001.",
+                  "Versi 1.0.43 dengan label sidebar v20260629-1043/1.0.43.",
+                  "Server menyimpan paket update lokal di updates/cache setelah update berhasil sehingga Kasir/App bisa update dari LAN lebih dulu.",
+                  "Kasir dan Timerra App mencoba manifest/package dari Server lokal terlebih dahulu, lalu fallback ke GitHub jika cache lokal gagal.",
+                  "Nama paket update GitHub disederhanakan menjadi Timerra.rar.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
