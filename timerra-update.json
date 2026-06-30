@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.55",
+    "latestVersion":  "1.0.56",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-07-01",
-    "buildLabel":  "v20260701-0013",
+    "buildLabel":  "v20260701-0145",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "ee9bfdc58fcfd0aa72675082a27a1958e4150dacdbd9901184fb58bc395e87e0",
-                    "sizeBytes":  79949502,
+                    "sha256":  "7694efbd5be606b251468266085f2aefd51ea4da6a4e26ea4232b1bc876bb33b",
+                    "sizeBytes":  79818830,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -63,11 +63,9 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.55 dengan label sidebar v20260701-0013/1.0.55.",
-                  "Logout/restart Kasir tidak lagi memakai Tauri ACL client_runtime_info.",
-                  "Kasir dan Timerra App membawa clientId lewat URL panel, sementara native agent tetap mengirim heartbeat.",
-                  "Server bisa resolve restart client dari heartbeat jika clientId tidak dikirim UI.",
-                  "Command dan permission client_runtime_info dicabut dari Kasir/App.",
+                  "Versi 1.0.56 dengan label sidebar v20260701-0145/1.0.56.",
+                  "Fix paket jam fix/begadang melewati tengah malam: beli jam 01:00 pada paket 22:00-06:00 langsung aktif sampai 06:00, bukan menunggu 22:00 berikutnya.",
+                  "Ditambahkan unit test untuk window jam fix sebelum mulai, aktif setelah tengah malam, setelah selesai, dan paket jam fix hari yang sama.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config, log, backup, export lokal, atau cache update."
               ]
 }
