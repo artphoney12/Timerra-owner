@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.44",
+    "latestVersion":  "1.0.45",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-06-29",
-    "buildLabel":  "v20260629-1212",
+    "publishedAt":  "2026-06-30",
+    "buildLabel":  "v20260630-0946",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "5e408a448fb4b98ae2cc02c8a2490ef0c4048754fdc42ea58ca6197d30c09837",
-                    "sizeBytes":  79750398,
+                    "sha256":  "cee4c4560fc6498586783aeca82f90a7f56ad15451c8b5fb223b38d1c4154e22",
+                    "sizeBytes":  79745534,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -63,11 +63,9 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.44 dengan label sidebar v20260629-1212/1.0.44.",
-                  "Kasir refresh data satu kali setelah login dan selalu masuk awal ke Monitor TV.",
-                  "Timerra App refresh data satu kali setelah login member dan selalu masuk awal ke Paket.",
-                  "Ringkasan Hari Ini kini toggle show/hide dengan tahan klik 2 detik.",
-                  "Batas void 5 menit kini dihitung dari 5 menit pertama pemakaian paket, bukan sisa timer.",
+                  "Versi 1.0.45 dengan label sidebar v20260630-0946/1.0.45.",
+                  "Kasir web kini responsive untuk Android portrait dan tablet landscape saat dibuka dari browser.",
+                  "Di layar HP portrait, sidebar Kasir berubah menjadi navigasi bawah yang bisa digeser dan kontrol dibuat lebih ramah sentuh.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
