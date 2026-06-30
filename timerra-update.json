@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.46",
+    "latestVersion":  "1.0.48",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-30",
-    "buildLabel":  "v20260630-1305",
+    "buildLabel":  "v20260630-1542",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "33071b448d536d993612369b305c0ac16978d1b90802ee9bb3db73d4a7730582",
-                    "sizeBytes":  109143230,
+                    "sha256":  "e562ee9a539e85bfbce0cae67d165096916176d30c34dcd66d4d2e4ff0429212",
+                    "sizeBytes":  79772094,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -63,10 +63,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.46 dengan label sidebar v20260630-1305/1.0.46.",
-                  "Password admin/kasir/operator sekarang bebas 1-64 karakter; aturan password APK TV tetap 6 angka.",
-                  "Server menambahkan toggle auto update silent untuk Server, Kasir, dan Timerra App.",
-                  "Kasir dan Timerra App akan login ulang saat aplikasi dibuka ulang, serta hanya menjalankan update silent saat kondisi aman.",
+                  "Versi 1.0.48 dengan label sidebar v20260630-1542/1.0.48.",
+                  "Logout Kasir sekarang menunggu logout server sukses, membersihkan sesi lokal, lalu restart aplikasi supaya wajib login ulang.",
+                  "No HP/WA member di Kasir dan Timerra App sekarang opsional, tetapi jika diisi wajib angka, diawali 08, dan maksimal 20 digit.",
+                  "Validasi No HP/WA juga diterapkan di backend agar data salah tidak bisa masuk lewat request manual.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
