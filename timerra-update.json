@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.49",
+    "latestVersion":  "1.0.50",
     "minSupportedVersion":  "0.1.0",
     "publishedAt":  "2026-06-30",
-    "buildLabel":  "v20260630-1635",
+    "buildLabel":  "v20260630-1813",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "305f5719420138a0b08fc50e2a6a9e00674c174e593ccca4b5b0b400fbef254d",
-                    "sizeBytes":  79903678,
+                    "sha256":  "7874f9b86bfd2ebab7ee19a2b6eacd8a16c055f72f157633c9f1352cc41837d4",
+                    "sizeBytes":  79920638,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -63,10 +63,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.49 dengan label sidebar v20260630-1635/1.0.49.",
-                  "Logout Kasir/App dibuat lebih kuat: sesi dibersihkan dulu, lalu aplikasi restart native dengan fallback start ulang.",
-                  "Tombol Restart Kasir dan Restart App dikembalikan di dashboard Server untuk client yang online.",
-                  "Server update manifest sekarang bisa memakai cache lokal lebih baru tanpa tertimpa manifest GitHub lama.",
-                  "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
+                  "Versi 1.0.50 dengan label sidebar v20260630-1813/1.0.50.",
+                  "Restart Kasir dan Timerra App sekarang memakai Timerra Updater.exe sebagai helper silent, bukan cmd start.",
+                  "Helper restart-only menunggu aplikasi lama mati lalu membuka ulang EXE tanpa jendela CMD.",
+                  "Fallback PowerShell hidden tersedia jika helper tidak ditemukan.",
+                  "ACL restart_timerra_client tetap disertakan di Kasir dan Timerra App."
               ]
 }
