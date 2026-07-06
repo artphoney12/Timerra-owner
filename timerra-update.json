@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.56",
+    "latestVersion":  "1.0.57",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-01",
-    "buildLabel":  "v20260701-0145",
+    "publishedAt":  "2026-07-06",
+    "buildLabel":  "v20260706-1141",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "7694efbd5be606b251468266085f2aefd51ea4da6a4e26ea4232b1bc876bb33b",
-                    "sizeBytes":  79818830,
+                    "sha256":  "86d913f0ebd4cb441183ed23c5152128c37e89d7b3c6fb3df650bc983d3780ad",
+                    "sizeBytes":  79829374,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -63,9 +63,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.56 dengan label sidebar v20260701-0145/1.0.56.",
-                  "Fix paket jam fix/begadang melewati tengah malam: beli jam 01:00 pada paket 22:00-06:00 langsung aktif sampai 06:00, bukan menunggu 22:00 berikutnya.",
-                  "Ditambahkan unit test untuk window jam fix sebelum mulai, aktif setelah tengah malam, setelah selesai, dan paket jam fix hari yang sama.",
-                  "Paket RAR dibuat dari staging bersih tanpa database aktif, config, log, backup, export lokal, atau cache update."
+                  "Versi 1.0.57 dengan label sidebar v20260706-1141/1.0.57.",
+                  "Web Report: tabel Rekap Shift dan Transaksi kini punya sort header sesuai teks/angka/tanggal.",
+                  "Web Report: pagination maksimal 50 data per halaman untuk Rekap Shift dan Transaksi.",
+                  "Web Report: tombol detail kaca pembesar dan Export PDF ditambahkan untuk Rekap Shift dan Transaksi.",
+                  "Web Report: label status Terbuka dan Tertutup dibedakan warna.",
+                  "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
