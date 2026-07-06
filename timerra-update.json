@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.57",
+    "latestVersion":  "1.0.59",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-06",
-    "buildLabel":  "v20260706-1141",
+    "publishedAt":  "2026-07-06T13:05:53+07:00",
+    "buildLabel":  "v20260706-1255",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "86d913f0ebd4cb441183ed23c5152128c37e89d7b3c6fb3df650bc983d3780ad",
-                    "sizeBytes":  79829374,
+                    "sha256":  "398f65b56f33eec52d3c26f13b28e6972009bb9bd0f2bfe6be186000166f617f",
+                    "sizeBytes":  79959022,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -63,11 +63,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.57 dengan label sidebar v20260706-1141/1.0.57.",
-                  "Web Report: tabel Rekap Shift dan Transaksi kini punya sort header sesuai teks/angka/tanggal.",
-                  "Web Report: pagination maksimal 50 data per halaman untuk Rekap Shift dan Transaksi.",
-                  "Web Report: tombol detail kaca pembesar dan Export PDF ditambahkan untuk Rekap Shift dan Transaksi.",
-                  "Web Report: label status Terbuka dan Tertutup dibedakan warna.",
+                  "Versi 1.0.59 dengan label sidebar v20260706-1255/1.0.59.",
+                  "Web Report: detail Rekap Shift per shift kini dapat diexport PDF lengkap seperti modal Kasir.",
+                  "Kasir/Web Report: export PDF tidak lagi memakai command Tauri ACL untuk browse folder, save file, atau open folder; PDF dibuat server dan dibuka/diunduh lewat URL server.",
+                  "Web Report: payload export shiftDetail kini dikenali backend dengan casing yang benar.",
                   "Paket RAR dibuat dari staging bersih tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, atau cache update."
               ]
 }
