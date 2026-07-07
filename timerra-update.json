@@ -1,19 +1,40 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.65",
+    "latestVersion":  "1.0.66",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-07T01:18:37+07:00",
-    "buildLabel":  "v20260707-0111",
+    "publishedAt":  "2026-07-07T10:43:04+07:00",
+    "buildLabel":  "v20260707-1037",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "cdf5a71bf280b0d424e88f8b8eee916bb2363f02691271cbfdb9bf9ed07c5878",
-                    "sizeBytes":  79838190,
+                    "sha256":  "fb3d44a0e28fdedb937ce4764ccada59ad5c4fab3f61ba611ee83e127eeaeba3",
+                    "sizeBytes":  79835598,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
                     "encryptedFileNames":  true
                 },
+    "tvApk":  {
+                  "versionName":  "1.0.68",
+                  "versionCode":  68,
+                  "buildLabel":  "v20260707-1129",
+                  "publishedAt":  "2026-07-07T11:31:36+07:00",
+                  "package":  {
+                                  "fileName":  "TimerraTV-device-owner-debug.apk",
+                                  "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/TimerraTV-device-owner-debug.apk",
+                                  "sha256":  "62eeff69c6610d08759f947931c2b4c9fc210db48e1f3b83144f06cd0d883e82",
+                                  "sizeBytes":  11908702,
+                                  "compression":  "apk",
+                                  "requiresPassword":  false
+                              },
+                  "notes":  [
+                                "APK TV menampilkan versi di menu Admin TV.",
+                                "APK TV memakai warna judul dan pesan habis dari setting Tampilan TV.",
+                                "APK TV mengecek update otomatis tiap 5 menit saat service hidup.",
+                                "APK TV hanya auto-install saat tidak ada sesi billing aktif atau jadwal mulai yang sedang menunggu.",
+                                "APK TV tetap bisa cek dan install update manual dari menu Admin TV memakai verifikasi SHA256."
+                            ]
+              },
     "targets":  {
                     "server":  {
                                    "portableDir":  "Timerra_Server_Portable",
@@ -63,10 +84,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.65 dengan label sidebar v20260707-0111/1.0.65.",
-                  "Monitor TV: menu klik kanan sekarang dirender di layer viewport khusus, bukan di dalam section Monitor TV.",
-                  "Monitor TV: posisi menu klik kanan tetap dekat titik cursor dan tidak lagi turun jauh akibat transform animasi section.",
-                  "Monitor TV: ukuran menu klik kanan tetap mengikuti mode card Kecil, Normal, dan Besar.",
+                  "Versi 1.0.66 dengan label sidebar v20260707-1037/1.0.66.",
+                  "Monitor TV: label koneksi disederhanakan menjadi Online dan Offline saja.",
+                  "Monitor TV: kondisi lambat sekarang tetap tampil sebagai Online, sedangkan TV sleep atau belum pernah konek tampil sebagai Offline.",
+                  "Admin \u0026 Operator: susunan Sidebar Kasir dan Sidebar Timerra App sekarang bisa digeser dengan drag seperti Prioritas Paket.",
                   "Paket RAR dibuat dari staging bersih Server/Kasir/App saja tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, cache update, atau paket APK terpisah."
               ]
 }
