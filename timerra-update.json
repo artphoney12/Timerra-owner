@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.71",
+    "latestVersion":  "1.0.72",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-07T15:26:43+07:00",
-    "buildLabel":  "v20260707-1514",
+    "publishedAt":  "2026-07-08T04:30:23+07:00",
+    "buildLabel":  "v20260708-0413",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "a6473c7cff7bcaf867caee0881f530553ad9dc30e4d80945542b7c9379f23cf7",
-                    "sizeBytes":  102680574,
+                    "sha256":  "747823b5f98259aca432f1ac2b24bc1f3d6ee2cdf8ab34ed99ee69e1200a7fdf",
+                    "sizeBytes":  97881198,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -86,7 +86,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.71 dengan label sidebar v20260707-1514/1.0.71.",
+                  "Versi 1.0.72 dengan label sidebar v20260708-0413/1.0.72.",
+                  "Monitor TV: badge Online/Offline sekarang berdasarkan ping server ke IP TV, bukan last_seen APK.",
+                  "Monitor TV: TV baru atau TV habis tetap berstatus billing Habis, sedangkan koneksi tampil Online hanya setelah ping reply.",
+                  "Server TV: ping berjalan tiap 20 detik dan TV baru dianggap Offline setelah 5 RTO berturut-turut.",
                   "Monitor TV: Pindah Paket billing biasa sekarang mempertahankan tipe paket asal sehingga paket durasi tetap tampil sebagai timer putih setelah dipindahkan.",
                   "Monitor TV: card menampilkan versi APK terpasang di tengah bawah dengan teks putih kecil dan auto-shrink untuk ukuran kecil, normal, dan besar.",
                   "Server TV: status polling APK menyimpan versionName, versionCode, dan buildLabel per device lalu broadcast refresh ke Kasir.",
