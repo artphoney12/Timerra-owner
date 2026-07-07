@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.70",
+    "latestVersion":  "1.0.71",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-07T13:58:14+07:00",
-    "buildLabel":  "v20260707-1338",
+    "publishedAt":  "2026-07-07T15:26:43+07:00",
+    "buildLabel":  "v20260707-1514",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "82f873413456be17b9c1733c04dc5ad636bbf32f4826aa245da57d1c1fdc65c3",
-                    "sizeBytes":  102675678,
+                    "sha256":  "a6473c7cff7bcaf867caee0881f530553ad9dc30e4d80945542b7c9379f23cf7",
+                    "sizeBytes":  102680574,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -86,7 +86,8 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.70 dengan label sidebar v20260707-1338/1.0.70.",
+                  "Versi 1.0.71 dengan label sidebar v20260707-1514/1.0.71.",
+                  "Monitor TV: Pindah Paket billing biasa sekarang mempertahankan tipe paket asal sehingga paket durasi tetap tampil sebagai timer putih setelah dipindahkan.",
                   "Monitor TV: card menampilkan versi APK terpasang di tengah bawah dengan teks putih kecil dan auto-shrink untuk ukuran kecil, normal, dan besar.",
                   "Server TV: status polling APK menyimpan versionName, versionCode, dan buildLabel per device lalu broadcast refresh ke Kasir.",
                   "Monitor TV: label koneksi disederhanakan menjadi Online dan Offline saja.",
