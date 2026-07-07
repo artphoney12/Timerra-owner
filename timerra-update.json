@@ -1,39 +1,40 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.69",
+    "latestVersion":  "1.0.70",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-07T13:04:02+07:00",
-    "buildLabel":  "v20260707-1255",
+    "publishedAt":  "2026-07-07T13:58:14+07:00",
+    "buildLabel":  "v20260707-1338",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "222699aab8c80fac045ae671a4471b442936f21c6175c1e9e49bdf6cfd16c81d",
-                    "sizeBytes":  102674878,
+                    "sha256":  "82f873413456be17b9c1733c04dc5ad636bbf32f4826aa245da57d1c1fdc65c3",
+                    "sizeBytes":  102675678,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
                     "encryptedFileNames":  true
                 },
     "tvApk":  {
-                  "versionName":  "1.0.69",
-                  "versionCode":  69,
-                  "buildLabel":  "v20260707-1255",
-                  "publishedAt":  "2026-07-07T13:04:02+07:00",
+                  "versionName":  "1.0.70",
+                  "versionCode":  70,
+                  "buildLabel":  "v20260707-1338",
+                  "publishedAt":  "2026-07-07T13:58:14+07:00",
                   "package":  {
                                   "fileName":  "TimerraTV-device-owner-debug.apk",
                                   "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/TimerraTV-device-owner-debug.apk",
-                                  "sha256":  "b4a8a8e9e8ef9693773d9a2beaf94e11e49ddbcaa41e7cdd1db710f4ab1e9e11",
+                                  "sha256":  "403d1611fbda61d3add793f8789ef8228921d5ccb91e96e72242271620c5c5b7",
                                   "sizeBytes":  11925086,
                                   "compression":  "apk",
                                   "requiresPassword":  false
                               },
                   "notes":  [
-                                "APK TV menampilkan versi di menu Admin TV.",
+                                "APK TV menampilkan versi terpasang kecil di kanan bawah blackscreen.",
+                                "APK TV mengirim versi terpasang ke server saat polling status.",
+                                "APK TV menerima command OFF TV dari Kasir dan menjalankan DevicePolicyManager.lockNow saat Device Admin aktif.",
                                 "APK TV memakai warna judul dan pesan habis dari setting Tampilan TV.",
                                 "APK TV mengecek update otomatis tiap 5 menit saat service hidup.",
                                 "APK TV hanya auto-install saat tidak ada sesi billing aktif atau jadwal mulai yang sedang menunggu.",
-                                "APK TV tetap bisa cek dan install update manual dari menu Admin TV memakai verifikasi SHA256.",
-                                "APK TV menerima command OFF TV dari Kasir dan menjalankan DevicePolicyManager.lockNow saat Device Admin aktif."
+                                "APK TV tetap bisa cek dan install update manual dari menu Admin TV memakai verifikasi SHA256."
                             ]
               },
     "targets":  {
@@ -85,12 +86,113 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.69 dengan label sidebar v20260707-1255/1.0.69.",
+                  "Versi 1.0.70 dengan label sidebar v20260707-1338/1.0.70.",
+                  "Monitor TV: card menampilkan versi APK terpasang di tengah bawah dengan teks putih kecil dan auto-shrink untuk ukuran kecil, normal, dan besar.",
+                  "Server TV: status polling APK menyimpan versionName, versionCode, dan buildLabel per device lalu broadcast refresh ke Kasir.",
                   "Monitor TV: label koneksi disederhanakan menjadi Online dan Offline saja.",
                   "Monitor TV: kondisi lambat sekarang tetap tampil sebagai Online, sedangkan TV sleep atau belum pernah konek tampil sebagai Offline.",
                   "Admin \u0026 Operator: susunan Sidebar Kasir dan Sidebar Timerra App sekarang bisa digeser dengan drag seperti Prioritas Paket.",
                   "Monitor TV: menu klik kanan dan panel Aksi TV sekarang memiliki OFF TV untuk mengirim command sleep/screen-off ke APK.",
                   "Server TV: command OFF TV disimpan sebagai pending command dengan syncVersion dan dibersihkan lewat ack dari APK.",
-                  "Paket RAR dibuat dari staging bersih Server/Kasir/App saja tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, cache update, atau paket APK terpisah."
+                  "Paket RAR dibuat dari staging bersih Server/Kasir/App plus APK folder tanpa database aktif, secrets, log, backup, export lokal, atau cache update."
+              ]
+}
+{
+    "app":  "Timerra",
+    "latestVersion":  "1.0.70",
+    "minSupportedVersion":  "0.1.0",
+    "publishedAt":  "2026-07-07T13:58:14+07:00",
+    "buildLabel":  "v20260707-1338",
+    "package":  {
+                    "fileName":  "Timerra.rar",
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
+                    "sha256":  "82f873413456be17b9c1733c04dc5ad636bbf32f4826aa245da57d1c1fdc65c3",
+                    "sizeBytes":  102675678,
+                    "compression":  "rar",
+                    "extractor":  "unrar",
+                    "requiresPassword":  true,
+                    "encryptedFileNames":  true
+                },
+    "tvApk":  {
+                  "versionName":  "1.0.70",
+                  "versionCode":  70,
+                  "buildLabel":  "v20260707-1338",
+                  "publishedAt":  "2026-07-07T13:58:14+07:00",
+                  "package":  {
+                                  "fileName":  "TimerraTV-device-owner-debug.apk",
+                                  "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/TimerraTV-device-owner-debug.apk",
+                                  "sha256":  "403d1611fbda61d3add793f8789ef8228921d5ccb91e96e72242271620c5c5b7",
+                                  "sizeBytes":  11925086,
+                                  "compression":  "apk",
+                                  "requiresPassword":  false
+                              },
+                  "notes":  [
+                                "APK TV menampilkan versi terpasang kecil di kanan bawah blackscreen.",
+                                "APK TV mengirim versi terpasang ke server saat polling status.",
+                                "APK TV menerima command OFF TV dari Kasir dan menjalankan DevicePolicyManager.lockNow saat Device Admin aktif.",
+                                "APK TV memakai warna judul dan pesan habis dari setting Tampilan TV.",
+                                "APK TV mengecek update otomatis tiap 5 menit saat service hidup.",
+                                "APK TV hanya auto-install saat tidak ada sesi billing aktif atau jadwal mulai yang sedang menunggu.",
+                                "APK TV tetap bisa cek dan install update manual dari menu Admin TV memakai verifikasi SHA256."
+                            ]
+              },
+    "targets":  {
+                    "server":  {
+                                   "portableDir":  "Timerra_Server_Portable",
+                                   "executable":  "Timerra Server.exe",
+                                   "replace":  [
+                                                   "Timerra Server.exe",
+                                                   "Timerra Updater.exe",
+                                                   "web/operator/**",
+                                                   "web/server-manager/**",
+                                                   "db/migrations/**",
+                                                   "tools/**",
+                                                   "third_party/**",
+                                                   "web/report/**"
+                                               ],
+                                   "preserve":  [
+                                                    "config/**",
+                                                    "database/data/**",
+                                                    "backups/**",
+                                                    "logs/**",
+                                                    "exports/**",
+                                                    "updates/**"
+                                                ]
+                               },
+                    "kasir":  {
+                                  "portableDir":  "Timerra_Kasir_Portable",
+                                  "executable":  "Timerra Kasir.exe",
+                                  "replace":  [
+                                                  "Timerra Kasir.exe",
+                                                  "Timerra Updater.exe"
+                                              ],
+                                  "preserve":  [
+                                                   "config/**",
+                                                   "logs/**"
+                                               ]
+                              },
+                    "app":  {
+                                "portableDir":  "Timerra_App_Portable",
+                                "executable":  "Timerra App.exe",
+                                "replace":  [
+                                                "Timerra App.exe",
+                                                "Timerra Updater.exe"
+                                            ],
+                                "preserve":  [
+                                                 "config/**",
+                                                 "logs/**"
+                                             ]
+                            }
+                },
+    "notes":  [
+                  "Versi 1.0.70 dengan label sidebar v20260707-1338/1.0.70.",
+                  "Monitor TV: card menampilkan versi APK terpasang di tengah bawah dengan teks putih kecil dan auto-shrink untuk ukuran kecil, normal, dan besar.",
+                  "Server TV: status polling APK menyimpan versionName, versionCode, dan buildLabel per device lalu broadcast refresh ke Kasir.",
+                  "Monitor TV: label koneksi disederhanakan menjadi Online dan Offline saja.",
+                  "Monitor TV: kondisi lambat sekarang tetap tampil sebagai Online, sedangkan TV sleep atau belum pernah konek tampil sebagai Offline.",
+                  "Admin \u0026 Operator: susunan Sidebar Kasir dan Sidebar Timerra App sekarang bisa digeser dengan drag seperti Prioritas Paket.",
+                  "Monitor TV: menu klik kanan dan panel Aksi TV sekarang memiliki OFF TV untuk mengirim command sleep/screen-off ke APK.",
+                  "Server TV: command OFF TV disimpan sebagai pending command dengan syncVersion dan dibersihkan lewat ack dari APK.",
+                  "Paket RAR dibuat dari staging bersih Server/Kasir/App plus APK folder tanpa database aktif, secrets, log, backup, export lokal, atau cache update."
               ]
 }
