@@ -1,29 +1,29 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.66",
+    "latestVersion":  "1.0.69",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-07T10:43:04+07:00",
-    "buildLabel":  "v20260707-1037",
+    "publishedAt":  "2026-07-07T13:04:02+07:00",
+    "buildLabel":  "v20260707-1255",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "fb3d44a0e28fdedb937ce4764ccada59ad5c4fab3f61ba611ee83e127eeaeba3",
-                    "sizeBytes":  79835598,
+                    "sha256":  "222699aab8c80fac045ae671a4471b442936f21c6175c1e9e49bdf6cfd16c81d",
+                    "sizeBytes":  102674878,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
                     "encryptedFileNames":  true
                 },
     "tvApk":  {
-                  "versionName":  "1.0.68",
-                  "versionCode":  68,
-                  "buildLabel":  "v20260707-1129",
-                  "publishedAt":  "2026-07-07T11:31:36+07:00",
+                  "versionName":  "1.0.69",
+                  "versionCode":  69,
+                  "buildLabel":  "v20260707-1255",
+                  "publishedAt":  "2026-07-07T13:04:02+07:00",
                   "package":  {
                                   "fileName":  "TimerraTV-device-owner-debug.apk",
                                   "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/TimerraTV-device-owner-debug.apk",
-                                  "sha256":  "62eeff69c6610d08759f947931c2b4c9fc210db48e1f3b83144f06cd0d883e82",
-                                  "sizeBytes":  11908702,
+                                  "sha256":  "b4a8a8e9e8ef9693773d9a2beaf94e11e49ddbcaa41e7cdd1db710f4ab1e9e11",
+                                  "sizeBytes":  11925086,
                                   "compression":  "apk",
                                   "requiresPassword":  false
                               },
@@ -32,7 +32,8 @@
                                 "APK TV memakai warna judul dan pesan habis dari setting Tampilan TV.",
                                 "APK TV mengecek update otomatis tiap 5 menit saat service hidup.",
                                 "APK TV hanya auto-install saat tidak ada sesi billing aktif atau jadwal mulai yang sedang menunggu.",
-                                "APK TV tetap bisa cek dan install update manual dari menu Admin TV memakai verifikasi SHA256."
+                                "APK TV tetap bisa cek dan install update manual dari menu Admin TV memakai verifikasi SHA256.",
+                                "APK TV menerima command OFF TV dari Kasir dan menjalankan DevicePolicyManager.lockNow saat Device Admin aktif."
                             ]
               },
     "targets":  {
@@ -84,10 +85,12 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.66 dengan label sidebar v20260707-1037/1.0.66.",
+                  "Versi 1.0.69 dengan label sidebar v20260707-1255/1.0.69.",
                   "Monitor TV: label koneksi disederhanakan menjadi Online dan Offline saja.",
                   "Monitor TV: kondisi lambat sekarang tetap tampil sebagai Online, sedangkan TV sleep atau belum pernah konek tampil sebagai Offline.",
                   "Admin \u0026 Operator: susunan Sidebar Kasir dan Sidebar Timerra App sekarang bisa digeser dengan drag seperti Prioritas Paket.",
+                  "Monitor TV: menu klik kanan dan panel Aksi TV sekarang memiliki OFF TV untuk mengirim command sleep/screen-off ke APK.",
+                  "Server TV: command OFF TV disimpan sebagai pending command dengan syncVersion dan dibersihkan lewat ack dari APK.",
                   "Paket RAR dibuat dari staging bersih Server/Kasir/App saja tanpa database aktif, config Google Drive, secrets, log, backup, export lokal, cache update, atau paket APK terpisah."
               ]
 }
