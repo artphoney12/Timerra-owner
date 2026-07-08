@@ -2,7 +2,7 @@
     "app":  "Timerra",
     "latestVersion":  "1.0.75",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-08T22:21:24+07:00",
+    "publishedAt":  "2026-07-08T22:57:57+07:00",
     "buildLabel":  "v20260708-2210",
     "package":  {
                     "fileName":  "Timerra.rar",
@@ -15,21 +15,21 @@
                     "encryptedFileNames":  true
                 },
     "tvApk":  {
-                  "versionName":  "1.0.72",
-                  "versionCode":  72,
-                  "buildLabel":  "v20260708-2210",
-                  "publishedAt":  "2026-07-08T22:21:24+07:00",
+                  "versionName":  "1.0.73",
+                  "versionCode":  73,
+                  "buildLabel":  "v20260708-2256",
+                  "publishedAt":  "2026-07-08T22:57:57+07:00",
                   "package":  {
                                   "fileName":  "TimerraTV-device-owner-debug.apk",
                                   "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/TimerraTV-device-owner-debug.apk",
-                                  "sha256":  "5f818e0fe24d1fbd7a9ef514036863905069d6bf1e29b8d4be8ef8b936af4cc4",
+                                  "sha256":  "f14e92cad603ba865400203166d254a43b7627fd70e9a35e57d4dc173c23ff50",
                                   "sizeBytes":  11925086,
                                   "compression":  "apk",
                                   "requiresPassword":  false
                               },
                   "notes":  [
-                                "APK TV 1.0.72 menampilkan Pesan Broadcast sebagai running text kuning di bagian bawah layar.",
-                                "Pesan Broadcast tampil di atas timer aktif maupun layar hitam saat waktu habis.",
+                                "APK TV 1.0.73 menampilkan seluruh isi Pesan Broadcast panjang tanpa dipotong.",
+                                "Lebar running text dihitung dari panjang asli pesan dan animasi berjalan sampai semua teks lewat.",
                                 "Background broadcast hitam opacity 50% dan speed mengikuti setting server skala 1-100.",
                                 "APK TV tetap menerima command OFF TV dari Kasir saat Device Admin aktif dan auto-update tiap 5 menit saat service hidup."
                             ]
@@ -88,7 +88,7 @@
                   "Kasir: broadcast bisa All TV atau TV khusus, pesan kosong ditolak, dan hasil kirim menampilkan jumlah TV terkirim/dilewati.",
                   "Server: broadcast hanya live ke TV yang ping Online saat tombol Kirim ditekan; TV Offline dilewati dan tidak menerima pesan lama saat online lagi.",
                   "Server: speed running text tersimpan permanen di setting BROADCAST_SPEED skala 1-100.",
-                  "APK TV 1.0.72: running text kuning dari kanan ke kiri tampil di bawah layar dengan background hitam opacity 50%, baik saat timer aktif maupun blackscreen.",
+                  "APK TV 1.0.73: running text broadcast panjang dihitung dari lebar asli teks supaya seluruh pesan tampil dari kanan ke kiri tanpa dipotong.",
                   "Paket RAR dibuat dari staging bersih Server/Kasir/App plus APK folder tanpa database aktif, secrets, log, backup, export lokal, atau cache update."
               ]
 }
