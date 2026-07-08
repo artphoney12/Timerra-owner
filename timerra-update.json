@@ -1,40 +1,37 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.73",
+    "latestVersion":  "1.0.74",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-08T14:59:40+07:00",
-    "buildLabel":  "v20260708-1451",
+    "publishedAt":  "2026-07-08T20:53:44+07:00",
+    "buildLabel":  "v20260708-2042",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "18ed8f166bc9be5e7c086c9166f75446825098f18153e3beb6941b8d2c5b0a1a",
-                    "sizeBytes":  97879534,
+                    "sha256":  "6b6e492ee3d80c37cded58a8a3af0bdaf29f55fad5b5c4d9f130b630dafe2ff7",
+                    "sizeBytes":  97889310,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
                     "encryptedFileNames":  true
                 },
     "tvApk":  {
-                  "versionName":  "1.0.70",
-                  "versionCode":  70,
-                  "buildLabel":  "v20260707-1338",
-                  "publishedAt":  "2026-07-07T13:58:14+07:00",
+                  "versionName":  "1.0.71",
+                  "versionCode":  71,
+                  "buildLabel":  "v20260708-2042",
+                  "publishedAt":  "2026-07-08T20:53:44+07:00",
                   "package":  {
                                   "fileName":  "TimerraTV-device-owner-debug.apk",
                                   "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/TimerraTV-device-owner-debug.apk",
-                                  "sha256":  "403d1611fbda61d3add793f8789ef8228921d5ccb91e96e72242271620c5c5b7",
+                                  "sha256":  "a6f968c4c98c7f98f66ceac530b1fffc9b49a9b48bc54f4db2ae686b88eb8ad2",
                                   "sizeBytes":  11925086,
                                   "compression":  "apk",
                                   "requiresPassword":  false
                               },
                   "notes":  [
-                                "APK TV menampilkan versi terpasang kecil di kanan bawah blackscreen.",
-                                "APK TV mengirim versi terpasang ke server saat polling status.",
-                                "APK TV menerima command OFF TV dari Kasir dan menjalankan DevicePolicyManager.lockNow saat Device Admin aktif.",
-                                "APK TV memakai warna judul dan pesan habis dari setting Tampilan TV.",
-                                "APK TV mengecek update otomatis tiap 5 menit saat service hidup.",
-                                "APK TV hanya auto-install saat tidak ada sesi billing aktif atau jadwal mulai yang sedang menunggu.",
-                                "APK TV tetap bisa cek dan install update manual dari menu Admin TV memakai verifikasi SHA256."
+                                "APK TV mengirim IP lokal TV asli ke server saat polling status dan event.",
+                                "APK TV membuat server bisa ping IP TV asli, bukan gateway jaringan.",
+                                "APK TV tetap menampilkan versi terpasang dan mendukung auto-update tiap 5 menit saat service hidup.",
+                                "APK TV tetap menerima command OFF TV dari Kasir saat Device Admin aktif."
                             ]
               },
     "targets":  {
@@ -86,21 +83,11 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.73 dengan label sidebar v20260708-1451/1.0.73.",
-                  "Monitor TV: badge Online sekarang punya guard stale; jika data ping tidak update lebih dari 130 detik, card dianggap Offline.",
-                  "Server TV: hasil ping sekarang dicek dari reply valid TTL, bukan hanya exit code ping.exe.",
-                  "Server TV: ping semua TV dijalankan paralel agar interval 20 detik tidak molor saat TV banyak.",
-                  "Monitor TV: badge Online/Offline sekarang berdasarkan ping server ke IP TV, bukan last_seen APK.",
-                  "Monitor TV: TV baru atau TV habis tetap berstatus billing Habis, sedangkan koneksi tampil Online hanya setelah ping reply.",
-                  "Server TV: ping berjalan tiap 20 detik dan TV baru dianggap Offline setelah 5 RTO berturut-turut.",
-                  "Monitor TV: Pindah Paket billing biasa sekarang mempertahankan tipe paket asal sehingga paket durasi tetap tampil sebagai timer putih setelah dipindahkan.",
-                  "Monitor TV: card menampilkan versi APK terpasang di tengah bawah dengan teks putih kecil dan auto-shrink untuk ukuran kecil, normal, dan besar.",
-                  "Server TV: status polling APK menyimpan versionName, versionCode, dan buildLabel per device lalu broadcast refresh ke Kasir.",
-                  "Monitor TV: label koneksi disederhanakan menjadi Online dan Offline saja.",
-                  "Monitor TV: kondisi lambat sekarang tetap tampil sebagai Online, sedangkan TV sleep atau belum pernah konek tampil sebagai Offline.",
-                  "Admin \u0026 Operator: susunan Sidebar Kasir dan Sidebar Timerra App sekarang bisa digeser dengan drag seperti Prioritas Paket.",
-                  "Monitor TV: menu klik kanan dan panel Aksi TV sekarang memiliki OFF TV untuk mengirim command sleep/screen-off ke APK.",
-                  "Server TV: command OFF TV disimpan sebagai pending command dengan syncVersion dan dibersihkan lewat ack dari APK.",
+                  "Versi 1.0.74 dengan label sidebar v20260708-2042/1.0.74.",
+                  "Server TV: endpoint status/event sekarang menerima IP lokal yang dikirim APK dan memvalidasi IPv4 sebelum disimpan.",
+                  "Server TV: jika APK belum update atau tidak mengirim IP lokal, server tetap fallback ke IP koneksi lama.",
+                  "Monitor TV: Online/Offline tetap berdasarkan ping server tiap 20 detik dan Offline setelah 5 RTO berturut-turut.",
+                  "APK TV 1.0.71: polling status/event mengirim clientIp agar target ping per-TV tidak jatuh ke gateway seperti 192.168.108.1.",
                   "Paket RAR dibuat dari staging bersih Server/Kasir/App plus APK folder tanpa database aktif, secrets, log, backup, export lokal, atau cache update."
               ]
 }
