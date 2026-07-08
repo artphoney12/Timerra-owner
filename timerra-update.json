@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.75",
+    "latestVersion":  "1.0.77",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-08T22:57:57+07:00",
-    "buildLabel":  "v20260708-2210",
+    "publishedAt":  "2026-07-09T00:08:00+07:00",
+    "buildLabel":  "v20260708-2358",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "24a77854932c05aee1102168575fa8ddc62ee484e3f9cd02fdf93298a30b749c",
-                    "sizeBytes":  102719678,
+                    "sha256":  "b0b1715c515d22e3d640c406f2214d3d513b020f8ea7de2640e37237a11563c6",
+                    "sizeBytes":  102720238,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -83,12 +83,13 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.75 dengan label sidebar v20260708-2210/1.0.75.",
-                  "Kasir: menu Pesan Broadcast baru dengan permission broadcast_message; operator default OFF, admin full akses.",
-                  "Kasir: broadcast bisa All TV atau TV khusus, pesan kosong ditolak, dan hasil kirim menampilkan jumlah TV terkirim/dilewati.",
-                  "Server: broadcast hanya live ke TV yang ping Online saat tombol Kirim ditekan; TV Offline dilewati dan tidak menerima pesan lama saat online lagi.",
-                  "Server: speed running text tersimpan permanen di setting BROADCAST_SPEED skala 1-100.",
-                  "APK TV 1.0.73: running text broadcast panjang dihitung dari lebar asli teks supaya seluruh pesan tampil dari kanan ke kiri tanpa dipotong.",
+                  "Versi 1.0.77 dengan label sidebar v20260708-2358/1.0.77.",
+                  "Kasir: halaman login sekarang menampilkan Shift Aktif Sekarang jika ada shift terbuka, termasuk nama shift, operator, dan waktu dibuka.",
+                  "Kasir: halaman login menampilkan Belum ada shift aktif jika belum ada kasir yang start shift, lalu refresh status otomatis tiap 30 detik selama belum login.",
+                  "Server: RPC publik read-only getLoginShiftStatus ditambahkan khusus untuk status shift di halaman login tanpa token.",
+                  "Kasir: menu Pesan Broadcast tetap tersedia dengan permission broadcast_message; operator default OFF, admin full akses.",
+                  "Server: broadcast tetap hanya live ke TV yang ping Online saat tombol Kirim ditekan; TV Offline dilewati dan tidak menerima pesan lama saat online lagi.",
+                  "APK TV tetap 1.0.73: running text broadcast panjang dihitung dari lebar asli teks supaya seluruh pesan tampil dari kanan ke kiri tanpa dipotong.",
                   "Paket RAR dibuat dari staging bersih Server/Kasir/App plus APK folder tanpa database aktif, secrets, log, backup, export lokal, atau cache update."
               ]
 }
