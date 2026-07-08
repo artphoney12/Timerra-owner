@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.77",
+    "latestVersion":  "1.0.78",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-09T00:08:00+07:00",
-    "buildLabel":  "v20260708-2358",
+    "publishedAt":  "2026-07-09T02:54:32+07:00",
+    "buildLabel":  "v20260709-0236",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "b0b1715c515d22e3d640c406f2214d3d513b020f8ea7de2640e37237a11563c6",
-                    "sizeBytes":  102720238,
+                    "sha256":  "381b483e740faab380bcf35a8aa75576f0516ca47c4fb94c8c19763cf071601b",
+                    "sizeBytes":  102736638,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -31,7 +31,7 @@
                                 "APK TV 1.0.73 menampilkan seluruh isi Pesan Broadcast panjang tanpa dipotong.",
                                 "Lebar running text dihitung dari panjang asli pesan dan animasi berjalan sampai semua teks lewat.",
                                 "Background broadcast hitam opacity 50% dan speed mengikuti setting server skala 1-100.",
-                                "APK TV tetap menerima command OFF TV dari Kasir saat Device Admin aktif dan auto-update tiap 5 menit saat service hidup."
+                                "APK TV tetap menerima command Matikan TV dari Kasir saat Device Admin aktif dan auto-update tiap 5 menit saat service hidup."
                             ]
               },
     "targets":  {
@@ -83,13 +83,14 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.77 dengan label sidebar v20260708-2358/1.0.77.",
-                  "Kasir: halaman login sekarang menampilkan Shift Aktif Sekarang jika ada shift terbuka, termasuk nama shift, operator, dan waktu dibuka.",
-                  "Kasir: halaman login menampilkan Belum ada shift aktif jika belum ada kasir yang start shift, lalu refresh status otomatis tiap 30 detik selama belum login.",
-                  "Server: RPC publik read-only getLoginShiftStatus ditambahkan khusus untuk status shift di halaman login tanpa token.",
-                  "Kasir: menu Pesan Broadcast tetap tersedia dengan permission broadcast_message; operator default OFF, admin full akses.",
-                  "Server: broadcast tetap hanya live ke TV yang ping Online saat tombol Kirim ditekan; TV Offline dilewati dan tidak menerima pesan lama saat online lagi.",
-                  "APK TV tetap 1.0.73: running text broadcast panjang dihitung dari lebar asli teks supaya seluruh pesan tampil dari kanan ke kiri tanpa dipotong.",
+                  "Versi 1.0.78 dengan label sidebar v20260709-0236/1.0.78.",
+                  "Kasir dan Timerra App: label aksi billing dirapikan menjadi Jual Billing, Stop Billing, Matikan TV, dan Pindah Billing pada tombol aksi dan menu klik kanan.",
+                  "Kasir: timer TV aktif sekarang punya hover info paket yang sedang dipakai, termasuk lebih dari satu paket sesuai urutan prioritas setting.",
+                  "Timerra App: card TV sekarang punya menu klik kanan untuk Login ke TV atau Logout dari TV sesuai status member.",
+                  "Timerra App: timer TV aktif punya hover info paket yang sama dari data server.",
+                  "Kasir: halaman login billing menampilkan versi aplikasi di bawah teks Timerra.",
+                  "Server: data daftar TV menambahkan timerPackages untuk sumber tooltip paket tanpa mengubah status billing atau status online/offline.",
+                  "APK TV tetap 1.0.73 pada rilis ini; revisi ini hanya desktop Server/Kasir/App dan manifest owner.",
                   "Paket RAR dibuat dari staging bersih Server/Kasir/App plus APK folder tanpa database aktif, secrets, log, backup, export lokal, atau cache update."
               ]
 }
