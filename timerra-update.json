@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.72",
+    "latestVersion":  "1.0.73",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-08T04:30:23+07:00",
-    "buildLabel":  "v20260708-0413",
+    "publishedAt":  "2026-07-08T14:59:40+07:00",
+    "buildLabel":  "v20260708-1451",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "747823b5f98259aca432f1ac2b24bc1f3d6ee2cdf8ab34ed99ee69e1200a7fdf",
-                    "sizeBytes":  97881198,
+                    "sha256":  "18ed8f166bc9be5e7c086c9166f75446825098f18153e3beb6941b8d2c5b0a1a",
+                    "sizeBytes":  97879534,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -86,7 +86,10 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.72 dengan label sidebar v20260708-0413/1.0.72.",
+                  "Versi 1.0.73 dengan label sidebar v20260708-1451/1.0.73.",
+                  "Monitor TV: badge Online sekarang punya guard stale; jika data ping tidak update lebih dari 130 detik, card dianggap Offline.",
+                  "Server TV: hasil ping sekarang dicek dari reply valid TTL, bukan hanya exit code ping.exe.",
+                  "Server TV: ping semua TV dijalankan paralel agar interval 20 detik tidak molor saat TV banyak.",
                   "Monitor TV: badge Online/Offline sekarang berdasarkan ping server ke IP TV, bukan last_seen APK.",
                   "Monitor TV: TV baru atau TV habis tetap berstatus billing Habis, sedangkan koneksi tampil Online hanya setelah ping reply.",
                   "Server TV: ping berjalan tiap 20 detik dan TV baru dianggap Offline setelah 5 RTO berturut-turut.",
