@@ -1,37 +1,37 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.0.74",
+    "latestVersion":  "1.0.75",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-08T20:53:44+07:00",
-    "buildLabel":  "v20260708-2042",
+    "publishedAt":  "2026-07-08T22:21:24+07:00",
+    "buildLabel":  "v20260708-2210",
     "package":  {
                     "fileName":  "Timerra.rar",
                     "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/Timerra.rar",
-                    "sha256":  "6b6e492ee3d80c37cded58a8a3af0bdaf29f55fad5b5c4d9f130b630dafe2ff7",
-                    "sizeBytes":  97889310,
+                    "sha256":  "24a77854932c05aee1102168575fa8ddc62ee484e3f9cd02fdf93298a30b749c",
+                    "sizeBytes":  102719678,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
                     "encryptedFileNames":  true
                 },
     "tvApk":  {
-                  "versionName":  "1.0.71",
-                  "versionCode":  71,
-                  "buildLabel":  "v20260708-2042",
-                  "publishedAt":  "2026-07-08T20:53:44+07:00",
+                  "versionName":  "1.0.72",
+                  "versionCode":  72,
+                  "buildLabel":  "v20260708-2210",
+                  "publishedAt":  "2026-07-08T22:21:24+07:00",
                   "package":  {
                                   "fileName":  "TimerraTV-device-owner-debug.apk",
                                   "url":  "https://github.com/artphoney12/Timerra-owner/releases/latest/download/TimerraTV-device-owner-debug.apk",
-                                  "sha256":  "a6f968c4c98c7f98f66ceac530b1fffc9b49a9b48bc54f4db2ae686b88eb8ad2",
+                                  "sha256":  "5f818e0fe24d1fbd7a9ef514036863905069d6bf1e29b8d4be8ef8b936af4cc4",
                                   "sizeBytes":  11925086,
                                   "compression":  "apk",
                                   "requiresPassword":  false
                               },
                   "notes":  [
-                                "APK TV mengirim IP lokal TV asli ke server saat polling status dan event.",
-                                "APK TV membuat server bisa ping IP TV asli, bukan gateway jaringan.",
-                                "APK TV tetap menampilkan versi terpasang dan mendukung auto-update tiap 5 menit saat service hidup.",
-                                "APK TV tetap menerima command OFF TV dari Kasir saat Device Admin aktif."
+                                "APK TV 1.0.72 menampilkan Pesan Broadcast sebagai running text kuning di bagian bawah layar.",
+                                "Pesan Broadcast tampil di atas timer aktif maupun layar hitam saat waktu habis.",
+                                "Background broadcast hitam opacity 50% dan speed mengikuti setting server skala 1-100.",
+                                "APK TV tetap menerima command OFF TV dari Kasir saat Device Admin aktif dan auto-update tiap 5 menit saat service hidup."
                             ]
               },
     "targets":  {
@@ -83,11 +83,12 @@
                             }
                 },
     "notes":  [
-                  "Versi 1.0.74 dengan label sidebar v20260708-2042/1.0.74.",
-                  "Server TV: endpoint status/event sekarang menerima IP lokal yang dikirim APK dan memvalidasi IPv4 sebelum disimpan.",
-                  "Server TV: jika APK belum update atau tidak mengirim IP lokal, server tetap fallback ke IP koneksi lama.",
-                  "Monitor TV: Online/Offline tetap berdasarkan ping server tiap 20 detik dan Offline setelah 5 RTO berturut-turut.",
-                  "APK TV 1.0.71: polling status/event mengirim clientIp agar target ping per-TV tidak jatuh ke gateway seperti 192.168.108.1.",
+                  "Versi 1.0.75 dengan label sidebar v20260708-2210/1.0.75.",
+                  "Kasir: menu Pesan Broadcast baru dengan permission broadcast_message; operator default OFF, admin full akses.",
+                  "Kasir: broadcast bisa All TV atau TV khusus, pesan kosong ditolak, dan hasil kirim menampilkan jumlah TV terkirim/dilewati.",
+                  "Server: broadcast hanya live ke TV yang ping Online saat tombol Kirim ditekan; TV Offline dilewati dan tidak menerima pesan lama saat online lagi.",
+                  "Server: speed running text tersimpan permanen di setting BROADCAST_SPEED skala 1-100.",
+                  "APK TV 1.0.72: running text kuning dari kanan ke kiri tampil di bawah layar dengan background hitam opacity 50%, baik saat timer aktif maupun blackscreen.",
                   "Paket RAR dibuat dari staging bersih Server/Kasir/App plus APK folder tanpa database aktif, secrets, log, backup, export lokal, atau cache update."
               ]
 }
