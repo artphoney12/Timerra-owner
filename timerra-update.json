@@ -1,28 +1,28 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.1.1",
+    "latestVersion":  "1.1.2",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-20T18:00:44+07:00",
-    "buildLabel":  "v20260720-1739",
+    "publishedAt":  "2026-07-21T01:11:05+07:00",
+    "buildLabel":  "v20260721-0012",
     "package":  {
                     "fileName":  "Timerra.rar",
-                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.1/Timerra.rar",
-                    "sha256":  "62200737525847f3c24ec38e3d4d1560bc598f301e64b869d27cab720a6fe5c7",
-                    "sizeBytes":  95835790,
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.2/Timerra.rar",
+                    "sha256":  "7db7b21bd1db85a5ea3e6cefe56dc10f1b63abdce959ae07e33c548aaf1afea1",
+                    "sizeBytes":  95846206,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
                     "encryptedFileNames":  true
                 },
     "tvApk":  {
-                  "versionName":  "1.1.1",
-                  "versionCode":  101,
-                  "buildLabel":  "v20260720-1739",
-                  "publishedAt":  "2026-07-20T18:00:44+07:00",
+                  "versionName":  "1.1.2",
+                  "versionCode":  102,
+                  "buildLabel":  "v20260721-0012",
+                  "publishedAt":  "2026-07-21T01:11:05+07:00",
                   "package":  {
                                   "fileName":  "TimerraTV-device-owner-debug.apk",
-                                  "sha256":  "b5b74d649b56f6400ea919dd147a9e2bae1a9be6ef84cc49f7eedc65570dd8c6",
-                                  "sizeBytes":  11957850,
+                                  "sha256":  "85a4d97a5603fe6705329a03924ff40ab4f7c603e60592d779eac8fd1f77b9f8",
+                                  "sizeBytes":  12141510,
                                   "compression":  "apk",
                                   "requiresPassword":  false,
                                   "delivery":  "server-cache",
@@ -30,9 +30,9 @@
                                   "serverMetadataPath":  "/api/tv/apk-update"
                               },
                   "notes":  [
-                                "Exit Absolut menerima password admin utama atau password sementara aktif dengan pembatasan lima percobaan.",
-                                "Perubahan jaringan Ethernet dan Wi-Fi memicu sinkronisasi ulang bertahap tanpa menduplikasi identitas TV.",
-                                "Versi APK dan label sistem mengikuti rilis Timerra 1.1.1."
+                                "Exit Absolut tidak lagi bergantung pada keyboard sistem TV dan hanya menerima enam digit melalui keypad internal.",
+                                "Tombol SETTINGS, MENU, atau INFO dapat memulihkan panel password Exit Absolut dari kondisi fokus apa pun.",
+                                "Versi APK dan label sistem mengikuti rilis Timerra 1.1.2."
                             ]
               },
     "targets":  {
@@ -85,26 +85,23 @@
                             }
                 },
     "notes":  [
-                  "Paket yang sudah dimiliki member tetap dapat dipakai sampai habis meskipun paket katalog dinonaktifkan.",
-                  "Pengaturan paket memfilter Paket Durasi berdasarkan kategori dan hanya menampilkan Paket Jam Fix pada kategori BEGADANG.",
-                  "Paket Kompensasi dapat memulihkan billing durasi aktif tanpa Stop Billing, dengan permission, alasan, transaksi, dan audit lengkap.",
-                  "Admin dapat membuat sampai 50 password Exit Absolut sementara enam digit dengan masa berlaku dan penghapusan terkontrol.",
-                  "APK TV memulihkan koneksi otomatis saat berpindah Ethernet dan Wi-Fi tanpa mengganti identitas TV.",
-                  "Laporan Kasir dan Web Report memakai periode hari, minggu, bulan, tahun, navigasi periode, serta analisis pendapatan dibanding periode sebelumnya."
+                  "Exit Absolut APK memakai keypad angka internal yang stabil untuk remote TV dan dapat dibuka ulang saat fokus bermasalah.",
+                  "Web Report dan Laporan Kasir menampilkan perbandingan pendapatan empat pekan antara dua bulan dengan detail transaksi.",
+                  "Analisis pendapatan memakai grafik batang saja dengan warna tren naik, turun, dan tetap."
               ],
     "rollback":  {
                      "enabled":  true,
                      "strategy":  "binary-preserve-data",
                      "recommended":  {
-                                         "version":  "1.0.101",
-                                         "buildLabel":  "v20260720-1004",
-                                         "publishedAt":  "2026-07-20T10:54:16+07:00",
+                                         "version":  "1.1.1",
+                                         "buildLabel":  "v20260720-1739",
+                                         "publishedAt":  "2026-07-20T18:00:44+07:00",
                                          "compatibility":  "binary-preserve-data",
                                          "package":  {
                                                          "fileName":  "Timerra.rar",
-                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.0.101/Timerra.rar",
-                                                         "sha256":  "05acf0dbd8ea2e7743a4a825334427597441f3f221292de68def29b85178665c",
-                                                         "sizeBytes":  95803678,
+                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.1/Timerra.rar",
+                                                         "sha256":  "62200737525847f3c24ec38e3d4d1560bc598f301e64b869d27cab720a6fe5c7",
+                                                         "sizeBytes":  95835790,
                                                          "compression":  "rar",
                                                          "extractor":  "unrar",
                                                          "requiresPassword":  true,
@@ -112,21 +109,21 @@
                                                      },
                                          "notes":  [
                                                        "Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.",
-                                                       "Seluruh UI Timerra memakai versi sistem global 1.0.101 dan label v20260720-1004 dari Server.",
-                                                       "APK TV dikirim melalui cache Server di dalam Timerra.rar; GitHub dipakai Server sebagai fallback dan tidak memakai asset APK standalone.",
-                                                       "Tutup Shift kini langsung menampilkan Detail Rekap Shift untuk hasil penutupan yang baru selesai.",
-                                                       "Tombol Tutup pada rekap hasil penutupan memulai ulang Timerra Kasir; detail rekap dari menu Laporan tetap hanya menutup modal.",
-                                                       "Exit Absolut pada APK TV menghentikan overlay, heartbeat, event, command, broadcast, dan updater setelah password admin serta konfirmasi."
+                                                       "Paket yang sudah dimiliki member tetap dapat dipakai sampai habis meskipun paket katalog dinonaktifkan.",
+                                                       "Pengaturan paket memfilter Paket Durasi berdasarkan kategori dan hanya menampilkan Paket Jam Fix pada kategori BEGADANG.",
+                                                       "Paket Kompensasi dapat memulihkan billing durasi aktif tanpa Stop Billing, dengan permission, alasan, transaksi, dan audit lengkap.",
+                                                       "Admin dapat membuat sampai 50 password Exit Absolut sementara enam digit dengan masa berlaku dan penghapusan terkontrol.",
+                                                       "APK TV memulihkan koneksi otomatis saat berpindah Ethernet dan Wi-Fi tanpa mengganti identitas TV."
                                                    ]
                                      },
                      "available":  [
 
                                    ]
                  },
-    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.1\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-20T18:00:44+07:00\",\"buildLabel\":\"v20260720-1739\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.1/Timerra.rar\",\"sha256\":\"62200737525847f3c24ec38e3d4d1560bc598f301e64b869d27cab720a6fe5c7\",\"sizeBytes\":95835790,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.1\",\"versionCode\":101,\"buildLabel\":\"v20260720-1739\",\"publishedAt\":\"2026-07-20T18:00:44+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"b5b74d649b56f6400ea919dd147a9e2bae1a9be6ef84cc49f7eedc65570dd8c6\",\"sizeBytes\":11957850,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Exit Absolut menerima password admin utama atau password sementara aktif dengan pembatasan lima percobaan.\",\"Perubahan jaringan Ethernet dan Wi-Fi memicu sinkronisasi ulang bertahap tanpa menduplikasi identitas TV.\",\"Versi APK dan label sistem mengikuti rilis Timerra 1.1.1.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Paket yang sudah dimiliki member tetap dapat dipakai sampai habis meskipun paket katalog dinonaktifkan.\",\"Pengaturan paket memfilter Paket Durasi berdasarkan kategori dan hanya menampilkan Paket Jam Fix pada kategori BEGADANG.\",\"Paket Kompensasi dapat memulihkan billing durasi aktif tanpa Stop Billing, dengan permission, alasan, transaksi, dan audit lengkap.\",\"Admin dapat membuat sampai 50 password Exit Absolut sementara enam digit dengan masa berlaku dan penghapusan terkontrol.\",\"APK TV memulihkan koneksi otomatis saat berpindah Ethernet dan Wi-Fi tanpa mengganti identitas TV.\",\"Laporan Kasir dan Web Report memakai periode hari, minggu, bulan, tahun, navigasi periode, serta analisis pendapatan dibanding periode sebelumnya.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.0.101\",\"buildLabel\":\"v20260720-1004\",\"publishedAt\":\"2026-07-20T10:54:16+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.0.101/Timerra.rar\",\"sha256\":\"05acf0dbd8ea2e7743a4a825334427597441f3f221292de68def29b85178665c\",\"sizeBytes\":95803678,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Seluruh UI Timerra memakai versi sistem global 1.0.101 dan label v20260720-1004 dari Server.\",\"APK TV dikirim melalui cache Server di dalam Timerra.rar; GitHub dipakai Server sebagai fallback dan tidak memakai asset APK standalone.\",\"Tutup Shift kini langsung menampilkan Detail Rekap Shift untuk hasil penutupan yang baru selesai.\",\"Tombol Tutup pada rekap hasil penutupan memulai ulang Timerra Kasir; detail rekap dari menu Laporan tetap hanya menutup modal.\",\"Exit Absolut pada APK TV menghentikan overlay, heartbeat, event, command, broadcast, dan updater setelah password admin serta konfirmasi.\"]},\"available\":[]}}",
+    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.2\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-21T01:11:05+07:00\",\"buildLabel\":\"v20260721-0012\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.2/Timerra.rar\",\"sha256\":\"7db7b21bd1db85a5ea3e6cefe56dc10f1b63abdce959ae07e33c548aaf1afea1\",\"sizeBytes\":95846206,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.2\",\"versionCode\":102,\"buildLabel\":\"v20260721-0012\",\"publishedAt\":\"2026-07-21T01:11:05+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"85a4d97a5603fe6705329a03924ff40ab4f7c603e60592d779eac8fd1f77b9f8\",\"sizeBytes\":12141510,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Exit Absolut tidak lagi bergantung pada keyboard sistem TV dan hanya menerima enam digit melalui keypad internal.\",\"Tombol SETTINGS, MENU, atau INFO dapat memulihkan panel password Exit Absolut dari kondisi fokus apa pun.\",\"Versi APK dan label sistem mengikuti rilis Timerra 1.1.2.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Exit Absolut APK memakai keypad angka internal yang stabil untuk remote TV dan dapat dibuka ulang saat fokus bermasalah.\",\"Web Report dan Laporan Kasir menampilkan perbandingan pendapatan empat pekan antara dua bulan dengan detail transaksi.\",\"Analisis pendapatan memakai grafik batang saja dengan warna tren naik, turun, dan tetap.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.1\",\"buildLabel\":\"v20260720-1739\",\"publishedAt\":\"2026-07-20T18:00:44+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.1/Timerra.rar\",\"sha256\":\"62200737525847f3c24ec38e3d4d1560bc598f301e64b869d27cab720a6fe5c7\",\"sizeBytes\":95835790,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Paket yang sudah dimiliki member tetap dapat dipakai sampai habis meskipun paket katalog dinonaktifkan.\",\"Pengaturan paket memfilter Paket Durasi berdasarkan kategori dan hanya menampilkan Paket Jam Fix pada kategori BEGADANG.\",\"Paket Kompensasi dapat memulihkan billing durasi aktif tanpa Stop Billing, dengan permission, alasan, transaksi, dan audit lengkap.\",\"Admin dapat membuat sampai 50 password Exit Absolut sementara enam digit dengan masa berlaku dan penghapusan terkontrol.\",\"APK TV memulihkan koneksi otomatis saat berpindah Ethernet dan Wi-Fi tanpa mengganti identitas TV.\"]},\"available\":[]}}",
     "manifestSignature":  {
                               "algorithm":  "RSA-SHA256",
                               "keyId":  "timerra-owner-2026-01",
-                              "value":  "J4Cl8kfyZQgVogg21W8CrnDOTSiZcMmn7Tclsat1Btny217xGFrjt9z3+dLnlNzrZe26GTxJsdF3i8Yi4NTpYqYJRwGjqeG7A78MTFFXBmhv874mcc4R3XpvaMibrWvlnP6sViEivsnk6viRJIsgSl3P4uRDS0MbBAgR3cEYp9BuTU5QUgx04fqzuDySidUOfbsipozklJf/cE4FADsTubk6wqIZT7AeIOmIn7uCekFdU9DaU/hMi5SOu3a11cScJPRhGeeXTFTqthpzgrurACmDIoczva6NTmOpVgDDFSg+m9mde3DVLxgxdQ+Zm4kFrW4WZhCAzn/ksZAvwobZ/wxU+CIBil9GMI4uSfmfAjkbHCdNbb7NUGll7c34AYPank22umanw/DBqmC0ipfFEf72GURodyAdLnVix56m5mJGunJQs4l2AmTDNDPapQdJcwqpec9e/xY1+Xf4MST2KbfMRdbJLyW6bRRiqPGpQREsqZSsNpZ4ogs8zzoye7OB"
+                              "value":  "X00OPMqPUAigM1Iphe1AhMoEC9PlQKTg8YqrhSuTKFggQ5iXDMljjfeJyXaNRgh1WSK+2tRo4S0p1ikbyAYA8cmhpcc9cqAusxbrD7E2Csy3xb2ZzSB9puGztkhunF/sPEeo22+WTiyvhL12R3q1i0XhqoLghk05t1Lo15DWIGlSEmohNmW5lGdoVNrvZNONwq0qyNRnFPSududwhgHZHQJpXk7xNhUOYFgQwiuCh1Y5R8RdJRASFiYvMcFS4C+vb7CCilaFRFU4Ukp3KcdKexINotDc4FrUOuMVmEHFA2KsOfY6nz9O9yjy4Sx+n+hTaY4YV7ZPDQ/HgzQbtWb2k95+WM5NwVp9XG9uzqUOiFt8/LadLGN5xUp8lG2PiTGOi74+2h56iXfthUDbbFTlXvUJQFqCqOy5W/klnDRaOSgSO1n7RpCAJMm5W21aiK91SuSzvBlG7U80AeVq3vTS5xbr3tE7O5HQ9B759ACyZH4bZWYVOGVQl3g840YqkivC"
                           }
 }
