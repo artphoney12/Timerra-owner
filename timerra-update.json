@@ -1,27 +1,27 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.1.4",
+    "latestVersion":  "1.1.5",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-22T09:37:36+07:00",
-    "buildLabel":  "v20260722-0917",
+    "publishedAt":  "2026-07-23T09:55:34+07:00",
+    "buildLabel":  "v20260723-0936",
     "package":  {
                     "fileName":  "Timerra.rar",
-                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.4/Timerra.rar",
-                    "sha256":  "7a2af62415d675be63156bb2314bf3fd13141c9bbcf043fb53e0b2431b53810d",
-                    "sizeBytes":  95994206,
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.5/Timerra.rar",
+                    "sha256":  "eb326f8743bc347dc01220e17d32b7944fdf065a01b2a0dcac2c0d36ae2a3a37",
+                    "sizeBytes":  95990302,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
                     "encryptedFileNames":  true
                 },
     "tvApk":  {
-                  "versionName":  "1.1.4",
-                  "versionCode":  104,
-                  "buildLabel":  "v20260722-0917",
-                  "publishedAt":  "2026-07-22T09:37:36+07:00",
+                  "versionName":  "1.1.5",
+                  "versionCode":  105,
+                  "buildLabel":  "v20260723-0936",
+                  "publishedAt":  "2026-07-23T09:55:34+07:00",
                   "package":  {
                                   "fileName":  "TimerraTV-device-owner-debug.apk",
-                                  "sha256":  "de575d8b35842f1209882d77d5b33add63ca8c9766c33aa94daaab72f94e4c7b",
+                                  "sha256":  "41372230bd5d512517d1783ced50f677c1e6eb6a8a04acee6b1aae6e76364bcd",
                                   "sizeBytes":  11990910,
                                   "compression":  "apk",
                                   "requiresPassword":  false,
@@ -30,11 +30,10 @@
                                   "serverMetadataPath":  "/api/tv/apk-update"
                               },
                   "notes":  [
-                                "Permintaan Remote View dari Kasir membuka dialog persetujuan Android langsung di TV tanpa masuk ke menu APK.",
-                                "Persetujuan tetap berlaku selama layanan APK hidup dan proses gambar dihentikan saat tidak ada penonton.",
-                                "Overlay Remote View buatan Timerra dihilangkan dari layar TV.",
-                                "Keypad Exit Absolut dan kontrol edit menggunakan tombol hitam-putih dengan ukuran serta fokus yang konsisten.",
-                                "Versi APK dan label sistem mengikuti rilis Timerra 1.1.4."
+                                "Tema dinamis Android dan palet template dihapus agar seluruh layar admin, pengaturan, dialog, formulir, dan tombol memakai tema hitam-putih yang sama.",
+                                "Tombol membalik menjadi putih dengan teks hitam saat fokus, sedangkan kondisi nonaktif tetap dibedakan menggunakan abu-abu monokrom.",
+                                "Pilihan warna timer dan warna broadcast tetap dipertahankan karena merupakan konfigurasi tampilan operasional TV.",
+                                "Versi APK dan label sistem mengikuti rilis Timerra 1.1.5."
                             ]
               },
     "targets":  {
@@ -87,24 +86,23 @@
                             }
                 },
     "notes":  [
-                  "Remote View TV dari Kasir kini langsung meminta persetujuan tangkap layar pada TV dan menampilkan status persetujuan secara jelas.",
-                  "Setelah disetujui, layanan Remote View tetap siap selama proses APK hidup tanpa meminta izin berulang dan berhenti mengenkode saat tidak ada penonton.",
-                  "Overlay khusus Remote View di layar TV dihapus agar tampilan pelanggan tidak terganggu.",
-                  "Keypad Exit Absolut dan seluruh kontrol edit APK memakai tampilan hitam-putih, ukuran stabil, serta fokus yang jelas untuk remote TV."
+                  "Seluruh antarmuka milik APK Timerra TV kini memakai tema hitam-putih statis dengan fokus remote yang konsisten, tanpa mengubah warna operasional timer dan broadcast.",
+                  "Menu klik kanan Kasir dan Timerra App kini selalu berada di dalam viewport, dapat digulir tanpa tertutup, dan mempertahankan header saat daftar aksi panjang.",
+                  "Pada layar mobile dan tablet portrait, menu klik kanan berubah menjadi panel aksi bawah yang memenuhi lebar aman layar dan tetap mudah disentuh."
               ],
     "rollback":  {
                      "enabled":  true,
                      "strategy":  "binary-preserve-data",
                      "recommended":  {
-                                         "version":  "1.1.3",
-                                         "buildLabel":  "v20260721-1730",
-                                         "publishedAt":  "2026-07-21T18:26:33+07:00",
+                                         "version":  "1.1.4",
+                                         "buildLabel":  "v20260722-0917",
+                                         "publishedAt":  "2026-07-22T09:37:36+07:00",
                                          "compatibility":  "binary-preserve-data",
                                          "package":  {
                                                          "fileName":  "Timerra.rar",
-                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.3/Timerra.rar",
-                                                         "sha256":  "eccf9db5a4c1afc0975afd9c30ad9a18dd4b5c7ca98de63bebd1f309a9496e13",
-                                                         "sizeBytes":  95968302,
+                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.4/Timerra.rar",
+                                                         "sha256":  "7a2af62415d675be63156bb2314bf3fd13141c9bbcf043fb53e0b2431b53810d",
+                                                         "sizeBytes":  95994206,
                                                          "compression":  "rar",
                                                          "extractor":  "unrar",
                                                          "requiresPassword":  true,
@@ -112,21 +110,20 @@
                                                      },
                                          "notes":  [
                                                        "Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.",
-                                                       "Remote View TV memungkinkan Admin atau user berizin melihat layar APK secara langsung tanpa kendali jarak jauh.",
-                                                       "Kontrol native Kasir, App, dan Server tidak lagi bergantung pada command ACL Tauri sehingga alur tutup shift dan pembaruan lebih konsisten.",
-                                                       "Kode koneksi APK mendukung kode singkat seperti TMR26, sementara spasi dan simbol yang tidak didukung ditolak dengan pesan tegas.",
-                                                       "Keypad Exit Absolut dan form edit APK memakai ukuran serta kontras fokus yang lebih sesuai untuk remote Android TV.",
-                                                       "Data operasional memakai respons no-store agar status TV, billing, shift, dan pengaturan tidak tertahan cache lama."
+                                                       "Remote View TV dari Kasir kini langsung meminta persetujuan tangkap layar pada TV dan menampilkan status persetujuan secara jelas.",
+                                                       "Setelah disetujui, layanan Remote View tetap siap selama proses APK hidup tanpa meminta izin berulang dan berhenti mengenkode saat tidak ada penonton.",
+                                                       "Overlay khusus Remote View di layar TV dihapus agar tampilan pelanggan tidak terganggu.",
+                                                       "Keypad Exit Absolut dan seluruh kontrol edit APK memakai tampilan hitam-putih, ukuran stabil, serta fokus yang jelas untuk remote TV."
                                                    ]
                                      },
                      "available":  [
 
                                    ]
                  },
-    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.4\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-22T09:37:36+07:00\",\"buildLabel\":\"v20260722-0917\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.4/Timerra.rar\",\"sha256\":\"7a2af62415d675be63156bb2314bf3fd13141c9bbcf043fb53e0b2431b53810d\",\"sizeBytes\":95994206,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.4\",\"versionCode\":104,\"buildLabel\":\"v20260722-0917\",\"publishedAt\":\"2026-07-22T09:37:36+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"de575d8b35842f1209882d77d5b33add63ca8c9766c33aa94daaab72f94e4c7b\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Permintaan Remote View dari Kasir membuka dialog persetujuan Android langsung di TV tanpa masuk ke menu APK.\",\"Persetujuan tetap berlaku selama layanan APK hidup dan proses gambar dihentikan saat tidak ada penonton.\",\"Overlay Remote View buatan Timerra dihilangkan dari layar TV.\",\"Keypad Exit Absolut dan kontrol edit menggunakan tombol hitam-putih dengan ukuran serta fokus yang konsisten.\",\"Versi APK dan label sistem mengikuti rilis Timerra 1.1.4.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Remote View TV dari Kasir kini langsung meminta persetujuan tangkap layar pada TV dan menampilkan status persetujuan secara jelas.\",\"Setelah disetujui, layanan Remote View tetap siap selama proses APK hidup tanpa meminta izin berulang dan berhenti mengenkode saat tidak ada penonton.\",\"Overlay khusus Remote View di layar TV dihapus agar tampilan pelanggan tidak terganggu.\",\"Keypad Exit Absolut dan seluruh kontrol edit APK memakai tampilan hitam-putih, ukuran stabil, serta fokus yang jelas untuk remote TV.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.3\",\"buildLabel\":\"v20260721-1730\",\"publishedAt\":\"2026-07-21T18:26:33+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.3/Timerra.rar\",\"sha256\":\"eccf9db5a4c1afc0975afd9c30ad9a18dd4b5c7ca98de63bebd1f309a9496e13\",\"sizeBytes\":95968302,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Remote View TV memungkinkan Admin atau user berizin melihat layar APK secara langsung tanpa kendali jarak jauh.\",\"Kontrol native Kasir, App, dan Server tidak lagi bergantung pada command ACL Tauri sehingga alur tutup shift dan pembaruan lebih konsisten.\",\"Kode koneksi APK mendukung kode singkat seperti TMR26, sementara spasi dan simbol yang tidak didukung ditolak dengan pesan tegas.\",\"Keypad Exit Absolut dan form edit APK memakai ukuran serta kontras fokus yang lebih sesuai untuk remote Android TV.\",\"Data operasional memakai respons no-store agar status TV, billing, shift, dan pengaturan tidak tertahan cache lama.\"]},\"available\":[]}}",
+    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.5\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-23T09:55:34+07:00\",\"buildLabel\":\"v20260723-0936\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.5/Timerra.rar\",\"sha256\":\"eb326f8743bc347dc01220e17d32b7944fdf065a01b2a0dcac2c0d36ae2a3a37\",\"sizeBytes\":95990302,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.5\",\"versionCode\":105,\"buildLabel\":\"v20260723-0936\",\"publishedAt\":\"2026-07-23T09:55:34+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"41372230bd5d512517d1783ced50f677c1e6eb6a8a04acee6b1aae6e76364bcd\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Tema dinamis Android dan palet template dihapus agar seluruh layar admin, pengaturan, dialog, formulir, dan tombol memakai tema hitam-putih yang sama.\",\"Tombol membalik menjadi putih dengan teks hitam saat fokus, sedangkan kondisi nonaktif tetap dibedakan menggunakan abu-abu monokrom.\",\"Pilihan warna timer dan warna broadcast tetap dipertahankan karena merupakan konfigurasi tampilan operasional TV.\",\"Versi APK dan label sistem mengikuti rilis Timerra 1.1.5.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Seluruh antarmuka milik APK Timerra TV kini memakai tema hitam-putih statis dengan fokus remote yang konsisten, tanpa mengubah warna operasional timer dan broadcast.\",\"Menu klik kanan Kasir dan Timerra App kini selalu berada di dalam viewport, dapat digulir tanpa tertutup, dan mempertahankan header saat daftar aksi panjang.\",\"Pada layar mobile dan tablet portrait, menu klik kanan berubah menjadi panel aksi bawah yang memenuhi lebar aman layar dan tetap mudah disentuh.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.4\",\"buildLabel\":\"v20260722-0917\",\"publishedAt\":\"2026-07-22T09:37:36+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.4/Timerra.rar\",\"sha256\":\"7a2af62415d675be63156bb2314bf3fd13141c9bbcf043fb53e0b2431b53810d\",\"sizeBytes\":95994206,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Remote View TV dari Kasir kini langsung meminta persetujuan tangkap layar pada TV dan menampilkan status persetujuan secara jelas.\",\"Setelah disetujui, layanan Remote View tetap siap selama proses APK hidup tanpa meminta izin berulang dan berhenti mengenkode saat tidak ada penonton.\",\"Overlay khusus Remote View di layar TV dihapus agar tampilan pelanggan tidak terganggu.\",\"Keypad Exit Absolut dan seluruh kontrol edit APK memakai tampilan hitam-putih, ukuran stabil, serta fokus yang jelas untuk remote TV.\"]},\"available\":[]}}",
     "manifestSignature":  {
                               "algorithm":  "RSA-SHA256",
                               "keyId":  "timerra-owner-2026-01",
-                              "value":  "MkKL6zk2eC/o+qdnNb9KzE1SN0WqtSdiiyTceSoAvP85aAWRYgFjJ34c7iepUUKj3vcHWAni45aWPvwoDEFGMkOh0sA7G6JrKx+QFToUnu5i/M3915ze5U1c0IXVr3gb+nyBnnTNo8+6cBzHmdjSCc4E7vj9zotET9u6oMQ3KPrYjzLCLnyz0Xb34HkKhL0S5pAcl3FQusLtq5jw/AXlJVDKiy5R2iUQp/oNdsGUTL99CIM6SW/DjOYy2o4FoLgcYC9J1T98SClTyrZuQjnnfxWaHoocyeSBYy6hvSsK5YOEzWhMlapPzh9OTJ4t2FAk1Mbr9CITnKQU/W9hzpFwE1SxUrC8e8dlAZgTXtJ8FfES1vht0ihe3HkWWQlsvVCeaMKlWVqoEK7k0aYOKBsmZdSgxBlAg7o08wBPHqbqobNW3SVf/tXnz8DBba8d74Y+ew+b1WzuNpUm2cj+ez1nPG0llvjT2GzL+ehnk8TFXL0rtKm0qPoI3K9/kX0kP8mz"
+                              "value":  "lq70LaOem6iOKWPSWR3rsbcspRREssMfH7kDCzeviw5WHApIYtW51oyqKHMRU2NL4Z8OCp3DzyFEjonUXzyEEmDqXJnyS2sENAUug0N0OOtgvOlcJTxRSqOlAtbP7yjuvh5qgwbJu6touoAWdXGSyOVNPAfqzT28lXAnm8hUp1ppX/97BsFbToAW09W1MA5V8JX+iduGbLJvFv0i6E6NjS+XbuNA2PyG410jCSo96jtSlibfaxOEX0+B9ryqX7hel22EjD1gCsMKnNjXSsaHiRab5ZIPUXgvsSl6ja6G/LmFT6PnK0tDrpySbLnkO0yuZDse9UAGQZpURL3K5Ba0dZ+H4x6OqJit5Y7WhbxqSGUFDyyCAIZjXcSV/C4LpdHlk5G31I9yB4hldOHF+2zpSKnqBnGVexSMG++W0pDvXB5mEj/NU4nc8VzAhaZMCpTeyadkLcO7GBLn0xF/3arIHamMZ6/3XHKGJvXrDhvH8URRHdSrkN4dLZ3NQ/GtKXxx"
                           }
 }
