@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.1.6",
+    "latestVersion":  "1.1.7",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-24T18:52:23+07:00",
-    "buildLabel":  "v20260724-1833",
+    "publishedAt":  "2026-07-27T12:40:36+07:00",
+    "buildLabel":  "v20260727-1214",
     "package":  {
                     "fileName":  "Timerra.rar",
-                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.6/Timerra.rar",
-                    "sha256":  "fed03698f035c6a7c104eda9a130cd4a359e799a088531d9bc6a47ebb21a1cbf",
-                    "sizeBytes":  95986206,
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.7/Timerra.rar",
+                    "sha256":  "09e94d568987d0bdf76ffc41616d11f14e389f19330cbbdd7482fa98ef9f21aa",
+                    "sizeBytes":  96115070,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -49,7 +49,8 @@
                                                    "tools/**",
                                                    "third_party/**",
                                                    "web/report/**",
-                                                   "apk-cache/**"
+                                                   "apk-cache/**",
+                                                   "Timerra Server Watchdog.exe"
                                                ],
                                    "preserve":  [
                                                     "config/**",
@@ -86,23 +87,24 @@
                             }
                 },
     "notes":  [
-                  "Sesi member durasi tidak lagi logout otomatis ketika Server berhenti mendadak, restart, atau listrik padam.",
-                  "Saat Server kembali, sesi member yang sama dilanjutkan pada TV semula memakai sisa waktu dari checkpoint terakhir tanpa membuat paket sisa baru.",
-                  "Recovery memperbarui member_sessions dan devices dalam satu transaksi serta menaikkan sync_version agar Kasir, Timerra App, dan APK segera mengikuti keadaan Server."
+                  "Watchdog native memantau Timerra Server saat Mulai Otomatis Windows aktif dan membuka kembali Server dalam mode tray bila proses berhenti mendadak.",
+                  "Server Manager kini terkunci dengan password database setiap kali dibuka, serta hanya menampilkan petunjuk password awal selama password masih default.",
+                  "Login Kasir otomatis mengunci username ke kasir pada shift aktif dan memberi petunjuk bahwa shift harus ditutup sebelum username dapat diganti.",
+                  "Timerra Kasir dan Timerra App kini membuka sesi login lebih dulu, menampilkan status Online atau Offline, serta menyediakan panel Hubungkan ke Server tanpa menyimpan kredensial pengguna di perangkat."
               ],
     "rollback":  {
                      "enabled":  true,
                      "strategy":  "binary-preserve-data",
                      "recommended":  {
-                                         "version":  "1.1.5",
-                                         "buildLabel":  "v20260723-0936",
-                                         "publishedAt":  "2026-07-23T09:55:34+07:00",
+                                         "version":  "1.1.6",
+                                         "buildLabel":  "v20260724-1833",
+                                         "publishedAt":  "2026-07-24T18:52:23+07:00",
                                          "compatibility":  "binary-preserve-data",
                                          "package":  {
                                                          "fileName":  "Timerra.rar",
-                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.5/Timerra.rar",
-                                                         "sha256":  "eb326f8743bc347dc01220e17d32b7944fdf065a01b2a0dcac2c0d36ae2a3a37",
-                                                         "sizeBytes":  95990302,
+                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.6/Timerra.rar",
+                                                         "sha256":  "fed03698f035c6a7c104eda9a130cd4a359e799a088531d9bc6a47ebb21a1cbf",
+                                                         "sizeBytes":  95986206,
                                                          "compression":  "rar",
                                                          "extractor":  "unrar",
                                                          "requiresPassword":  true,
@@ -110,19 +112,19 @@
                                                      },
                                          "notes":  [
                                                        "Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.",
-                                                       "Seluruh antarmuka milik APK Timerra TV kini memakai tema hitam-putih statis dengan fokus remote yang konsisten, tanpa mengubah warna operasional timer dan broadcast.",
-                                                       "Menu klik kanan Kasir dan Timerra App kini selalu berada di dalam viewport, dapat digulir tanpa tertutup, dan mempertahankan header saat daftar aksi panjang.",
-                                                       "Pada layar mobile dan tablet portrait, menu klik kanan berubah menjadi panel aksi bawah yang memenuhi lebar aman layar dan tetap mudah disentuh."
+                                                       "Sesi member durasi tidak lagi logout otomatis ketika Server berhenti mendadak, restart, atau listrik padam.",
+                                                       "Saat Server kembali, sesi member yang sama dilanjutkan pada TV semula memakai sisa waktu dari checkpoint terakhir tanpa membuat paket sisa baru.",
+                                                       "Recovery memperbarui member_sessions dan devices dalam satu transaksi serta menaikkan sync_version agar Kasir, Timerra App, dan APK segera mengikuti keadaan Server."
                                                    ]
                                      },
                      "available":  [
 
                                    ]
                  },
-    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.6\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-24T18:52:23+07:00\",\"buildLabel\":\"v20260724-1833\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.6/Timerra.rar\",\"sha256\":\"fed03698f035c6a7c104eda9a130cd4a359e799a088531d9bc6a47ebb21a1cbf\",\"sizeBytes\":95986206,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.5\",\"versionCode\":105,\"buildLabel\":\"v20260723-0936\",\"publishedAt\":\"2026-07-23T09:55:34+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"41372230bd5d512517d1783ced50f677c1e6eb6a8a04acee6b1aae6e76364bcd\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Tema dinamis Android dan palet template dihapus agar seluruh layar admin, pengaturan, dialog, formulir, dan tombol memakai tema hitam-putih yang sama.\",\"Tombol membalik menjadi putih dengan teks hitam saat fokus, sedangkan kondisi nonaktif tetap dibedakan menggunakan abu-abu monokrom.\",\"Pilihan warna timer dan warna broadcast tetap dipertahankan karena merupakan konfigurasi tampilan operasional TV.\",\"Versi APK dan label sistem mengikuti rilis Timerra 1.1.5.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Sesi member durasi tidak lagi logout otomatis ketika Server berhenti mendadak, restart, atau listrik padam.\",\"Saat Server kembali, sesi member yang sama dilanjutkan pada TV semula memakai sisa waktu dari checkpoint terakhir tanpa membuat paket sisa baru.\",\"Recovery memperbarui member_sessions dan devices dalam satu transaksi serta menaikkan sync_version agar Kasir, Timerra App, dan APK segera mengikuti keadaan Server.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.5\",\"buildLabel\":\"v20260723-0936\",\"publishedAt\":\"2026-07-23T09:55:34+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.5/Timerra.rar\",\"sha256\":\"eb326f8743bc347dc01220e17d32b7944fdf065a01b2a0dcac2c0d36ae2a3a37\",\"sizeBytes\":95990302,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Seluruh antarmuka milik APK Timerra TV kini memakai tema hitam-putih statis dengan fokus remote yang konsisten, tanpa mengubah warna operasional timer dan broadcast.\",\"Menu klik kanan Kasir dan Timerra App kini selalu berada di dalam viewport, dapat digulir tanpa tertutup, dan mempertahankan header saat daftar aksi panjang.\",\"Pada layar mobile dan tablet portrait, menu klik kanan berubah menjadi panel aksi bawah yang memenuhi lebar aman layar dan tetap mudah disentuh.\"]},\"available\":[]}}",
+    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.7\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-27T12:40:36+07:00\",\"buildLabel\":\"v20260727-1214\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.7/Timerra.rar\",\"sha256\":\"09e94d568987d0bdf76ffc41616d11f14e389f19330cbbdd7482fa98ef9f21aa\",\"sizeBytes\":96115070,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.5\",\"versionCode\":105,\"buildLabel\":\"v20260723-0936\",\"publishedAt\":\"2026-07-23T09:55:34+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"41372230bd5d512517d1783ced50f677c1e6eb6a8a04acee6b1aae6e76364bcd\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Tema dinamis Android dan palet template dihapus agar seluruh layar admin, pengaturan, dialog, formulir, dan tombol memakai tema hitam-putih yang sama.\",\"Tombol membalik menjadi putih dengan teks hitam saat fokus, sedangkan kondisi nonaktif tetap dibedakan menggunakan abu-abu monokrom.\",\"Pilihan warna timer dan warna broadcast tetap dipertahankan karena merupakan konfigurasi tampilan operasional TV.\",\"Versi APK dan label sistem mengikuti rilis Timerra 1.1.5.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Watchdog native memantau Timerra Server saat Mulai Otomatis Windows aktif dan membuka kembali Server dalam mode tray bila proses berhenti mendadak.\",\"Server Manager kini terkunci dengan password database setiap kali dibuka, serta hanya menampilkan petunjuk password awal selama password masih default.\",\"Login Kasir otomatis mengunci username ke kasir pada shift aktif dan memberi petunjuk bahwa shift harus ditutup sebelum username dapat diganti.\",\"Timerra Kasir dan Timerra App kini membuka sesi login lebih dulu, menampilkan status Online atau Offline, serta menyediakan panel Hubungkan ke Server tanpa menyimpan kredensial pengguna di perangkat.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.6\",\"buildLabel\":\"v20260724-1833\",\"publishedAt\":\"2026-07-24T18:52:23+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.6/Timerra.rar\",\"sha256\":\"fed03698f035c6a7c104eda9a130cd4a359e799a088531d9bc6a47ebb21a1cbf\",\"sizeBytes\":95986206,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Sesi member durasi tidak lagi logout otomatis ketika Server berhenti mendadak, restart, atau listrik padam.\",\"Saat Server kembali, sesi member yang sama dilanjutkan pada TV semula memakai sisa waktu dari checkpoint terakhir tanpa membuat paket sisa baru.\",\"Recovery memperbarui member_sessions dan devices dalam satu transaksi serta menaikkan sync_version agar Kasir, Timerra App, dan APK segera mengikuti keadaan Server.\"]},\"available\":[]}}",
     "manifestSignature":  {
                               "algorithm":  "RSA-SHA256",
                               "keyId":  "timerra-owner-2026-01",
-                              "value":  "TgQ1OcDPp4AZqlGKbB/ePaQ6sLUlu+KHevbUaKoGmTx9dDnWPtlE1NHT+mPOJSHzZvZXQYmiWlvU1koyudf1NplKDCcqxH3Gzr25yGmPOs/++dP0z6VFLyFA6qT/7EKqPVyOh414YgTP40kvUjnKjMTcgj9eEOb/oEIFZd5Y+n9XnqanSodIFAGZZekQZdWFzAkGzmDXMeKXHOc2o4ww7lRYp+nyschxWpEjUWLTz2smEcpk4HpV4qUKow/LmYCVjrXT/z41hHhsu73s+S7AW39R9QHM/AreCZZAbdcv5rdjSVx9rjQnGHC4exgjacNVu/f3YzENTWyqn6YM9EtqGntw0SqhLS1X1Yeb0NxLt2Y15Zzfe5DE1Jqmu3SdD0rBxvJo/DNDv8ApyKZnT1TeQ5JtyK+y0pV9Kz+rQ5KUiTRZMQOBnt0Ck9dzXW2ffuZavd2KAbiL6fu/nCZBZIGa23+zODkEOi//ViVpjTXY4OzcIOnCdA9aXul6IOu6ebqa"
+                              "value":  "Rl6mOgqk5B1puc0bKm089NDNPiJ+YA1broGLuR7VQ2gFEfpjVhUIsiBs3ADot9CB4OC/02xrX1XaS61PbZfDHuOjZYOBUWsEuJ9m1dbFtN5cBdCr6NBpW/w0fcpGT1ihxY43c+Pe7AZ8upHnOTRFpIJWDEcqAWfU+aYOu7bFPIjsBC9hFL4wJCBJbno2hSpawt8Vg2OT0hRMoN2+ijpj9WsWxZJvHGPWypQRYlTrcxa6wvmg/UqxMMz9sVUlkW9ykeJkIfiS3AQ+d2qQAFkTNM8YB7EeOyFRQbFpLnaZt/gaHCQCfXajJkPCy4AuHLRtM+8dqoQI1F4O9Fvtwr0+6pP367i4m8TdlPp3p49esiQwYYwCxBEwIGKJ+d0Qk/h1BFmyoewRWRmNcon7Shi1u884C/31mHu6rwIKeRmj5tjLK9TkzO0+EtwcTOO9Rd/XDjbTLK0LhvrVcHubRImJC+kPoW9dHaFNmoXc9G1A6F5Rea6eX+e2PFUjoH2ldLoh"
                           }
 }
