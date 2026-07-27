@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.1.8",
+    "latestVersion":  "1.1.9",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-27T14:29:44+07:00",
-    "buildLabel":  "v20260727-1403",
+    "publishedAt":  "2026-07-27T16:24:26+07:00",
+    "buildLabel":  "v20260727-1532",
     "package":  {
                     "fileName":  "Timerra.rar",
-                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.8/Timerra.rar",
-                    "sha256":  "d4d91acc5438bf3c03732249212fb2767e5a08af5e50293b9ff9a2f9ddde91b9",
-                    "sizeBytes":  96110622,
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.9/Timerra.rar",
+                    "sha256":  "fae3a750719bfc35590db29ea6c5f5e0ec34c12d68fb31300d80d7ce0b2b8602",
+                    "sizeBytes":  96111694,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -87,23 +87,23 @@
                             }
                 },
     "notes":  [
-                  "Saat shift aktif, login Kasir tetap mengunci username pemilik shift dan menyediakan Login Admin / Staf Admin melalui formulir terpisah.",
-                  "Login administratif divalidasi oleh Server berdasarkan Tipe User Admin, menolak akun Kasir atau nonaktif, dan tidak mengambil alih kepemilikan shift.",
-                  "Watchdog Server menyimpan status Mulai Otomatis Windows secara persisten, memperbaiki entri Startup, dan membuka kembali Server langsung ke tray setelah proses berhenti mendadak."
+                  "Server memulihkan Timerra Server Watchdog.exe yang hilang dari cache update setelah tanda tangan manifest, ukuran, dan SHA256 Timerra.rar berhasil diverifikasi.",
+                  "Status Mulai Otomatis Windows kini membedakan Watchdog aktif, tidak tersedia, dan tidak berjalan sehingga panel tidak lagi menampilkan status Aktif yang keliru.",
+                  "Gate release mensimulasikan upgrade instalasi lama tanpa Watchdog serta memastikan cache update yang dirusak ditolak."
               ],
     "rollback":  {
                      "enabled":  true,
                      "strategy":  "binary-preserve-data",
                      "recommended":  {
-                                         "version":  "1.1.7",
-                                         "buildLabel":  "v20260727-1214",
-                                         "publishedAt":  "2026-07-27T12:40:36+07:00",
+                                         "version":  "1.1.8",
+                                         "buildLabel":  "v20260727-1403",
+                                         "publishedAt":  "2026-07-27T14:29:44+07:00",
                                          "compatibility":  "binary-preserve-data",
                                          "package":  {
                                                          "fileName":  "Timerra.rar",
-                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.7/Timerra.rar",
-                                                         "sha256":  "09e94d568987d0bdf76ffc41616d11f14e389f19330cbbdd7482fa98ef9f21aa",
-                                                         "sizeBytes":  96115070,
+                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.8/Timerra.rar",
+                                                         "sha256":  "d4d91acc5438bf3c03732249212fb2767e5a08af5e50293b9ff9a2f9ddde91b9",
+                                                         "sizeBytes":  96110622,
                                                          "compression":  "rar",
                                                          "extractor":  "unrar",
                                                          "requiresPassword":  true,
@@ -111,20 +111,19 @@
                                                      },
                                          "notes":  [
                                                        "Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.",
-                                                       "Watchdog native memantau Timerra Server saat Mulai Otomatis Windows aktif dan membuka kembali Server dalam mode tray bila proses berhenti mendadak.",
-                                                       "Server Manager kini terkunci dengan password database setiap kali dibuka, serta hanya menampilkan petunjuk password awal selama password masih default.",
-                                                       "Login Kasir otomatis mengunci username ke kasir pada shift aktif dan memberi petunjuk bahwa shift harus ditutup sebelum username dapat diganti.",
-                                                       "Timerra Kasir dan Timerra App kini membuka sesi login lebih dulu, menampilkan status Online atau Offline, serta menyediakan panel Hubungkan ke Server tanpa menyimpan kredensial pengguna di perangkat."
+                                                       "Saat shift aktif, login Kasir tetap mengunci username pemilik shift dan menyediakan Login Admin / Staf Admin melalui formulir terpisah.",
+                                                       "Login administratif divalidasi oleh Server berdasarkan Tipe User Admin, menolak akun Kasir atau nonaktif, dan tidak mengambil alih kepemilikan shift.",
+                                                       "Watchdog Server menyimpan status Mulai Otomatis Windows secara persisten, memperbaiki entri Startup, dan membuka kembali Server langsung ke tray setelah proses berhenti mendadak."
                                                    ]
                                      },
                      "available":  [
 
                                    ]
                  },
-    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.8\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-27T14:29:44+07:00\",\"buildLabel\":\"v20260727-1403\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.8/Timerra.rar\",\"sha256\":\"d4d91acc5438bf3c03732249212fb2767e5a08af5e50293b9ff9a2f9ddde91b9\",\"sizeBytes\":96110622,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.5\",\"versionCode\":105,\"buildLabel\":\"v20260723-0936\",\"publishedAt\":\"2026-07-23T09:55:34+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"41372230bd5d512517d1783ced50f677c1e6eb6a8a04acee6b1aae6e76364bcd\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Tema dinamis Android dan palet template dihapus agar seluruh layar admin, pengaturan, dialog, formulir, dan tombol memakai tema hitam-putih yang sama.\",\"Tombol membalik menjadi putih dengan teks hitam saat fokus, sedangkan kondisi nonaktif tetap dibedakan menggunakan abu-abu monokrom.\",\"Pilihan warna timer dan warna broadcast tetap dipertahankan karena merupakan konfigurasi tampilan operasional TV.\",\"Versi APK dan label sistem mengikuti rilis Timerra 1.1.5.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Saat shift aktif, login Kasir tetap mengunci username pemilik shift dan menyediakan Login Admin / Staf Admin melalui formulir terpisah.\",\"Login administratif divalidasi oleh Server berdasarkan Tipe User Admin, menolak akun Kasir atau nonaktif, dan tidak mengambil alih kepemilikan shift.\",\"Watchdog Server menyimpan status Mulai Otomatis Windows secara persisten, memperbaiki entri Startup, dan membuka kembali Server langsung ke tray setelah proses berhenti mendadak.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.7\",\"buildLabel\":\"v20260727-1214\",\"publishedAt\":\"2026-07-27T12:40:36+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.7/Timerra.rar\",\"sha256\":\"09e94d568987d0bdf76ffc41616d11f14e389f19330cbbdd7482fa98ef9f21aa\",\"sizeBytes\":96115070,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Watchdog native memantau Timerra Server saat Mulai Otomatis Windows aktif dan membuka kembali Server dalam mode tray bila proses berhenti mendadak.\",\"Server Manager kini terkunci dengan password database setiap kali dibuka, serta hanya menampilkan petunjuk password awal selama password masih default.\",\"Login Kasir otomatis mengunci username ke kasir pada shift aktif dan memberi petunjuk bahwa shift harus ditutup sebelum username dapat diganti.\",\"Timerra Kasir dan Timerra App kini membuka sesi login lebih dulu, menampilkan status Online atau Offline, serta menyediakan panel Hubungkan ke Server tanpa menyimpan kredensial pengguna di perangkat.\"]},\"available\":[]}}",
+    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.9\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-27T16:24:26+07:00\",\"buildLabel\":\"v20260727-1532\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.9/Timerra.rar\",\"sha256\":\"fae3a750719bfc35590db29ea6c5f5e0ec34c12d68fb31300d80d7ce0b2b8602\",\"sizeBytes\":96111694,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.5\",\"versionCode\":105,\"buildLabel\":\"v20260723-0936\",\"publishedAt\":\"2026-07-23T09:55:34+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"41372230bd5d512517d1783ced50f677c1e6eb6a8a04acee6b1aae6e76364bcd\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Tema dinamis Android dan palet template dihapus agar seluruh layar admin, pengaturan, dialog, formulir, dan tombol memakai tema hitam-putih yang sama.\",\"Tombol membalik menjadi putih dengan teks hitam saat fokus, sedangkan kondisi nonaktif tetap dibedakan menggunakan abu-abu monokrom.\",\"Pilihan warna timer dan warna broadcast tetap dipertahankan karena merupakan konfigurasi tampilan operasional TV.\",\"Versi APK dan label sistem mengikuti rilis Timerra 1.1.5.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Server memulihkan Timerra Server Watchdog.exe yang hilang dari cache update setelah tanda tangan manifest, ukuran, dan SHA256 Timerra.rar berhasil diverifikasi.\",\"Status Mulai Otomatis Windows kini membedakan Watchdog aktif, tidak tersedia, dan tidak berjalan sehingga panel tidak lagi menampilkan status Aktif yang keliru.\",\"Gate release mensimulasikan upgrade instalasi lama tanpa Watchdog serta memastikan cache update yang dirusak ditolak.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.8\",\"buildLabel\":\"v20260727-1403\",\"publishedAt\":\"2026-07-27T14:29:44+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.8/Timerra.rar\",\"sha256\":\"d4d91acc5438bf3c03732249212fb2767e5a08af5e50293b9ff9a2f9ddde91b9\",\"sizeBytes\":96110622,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Saat shift aktif, login Kasir tetap mengunci username pemilik shift dan menyediakan Login Admin / Staf Admin melalui formulir terpisah.\",\"Login administratif divalidasi oleh Server berdasarkan Tipe User Admin, menolak akun Kasir atau nonaktif, dan tidak mengambil alih kepemilikan shift.\",\"Watchdog Server menyimpan status Mulai Otomatis Windows secara persisten, memperbaiki entri Startup, dan membuka kembali Server langsung ke tray setelah proses berhenti mendadak.\"]},\"available\":[]}}",
     "manifestSignature":  {
                               "algorithm":  "RSA-SHA256",
                               "keyId":  "timerra-owner-2026-01",
-                              "value":  "lfGa54Vvf/ntsLB7vIft/0EFFpckXstPilGm2vdjgagNOGHqwcihwZujTPYjBLUmSDJGJPVLSz5YOAbjwBmQYpIgG7JaW0Uz3rN6JRCkszyOAh5s4REJ5zx8nIyQvDzj3xas/jelYnEFG6qB0hSFOTiPf59mzy05LpJLQyRtLOFDPAA0E3NRqAW+yAK0UAMvH22l7nb9Twwi/5UEicZCghwhSx45svdJViIdF+nNAusCDWckIGgwd3lwqMQaT/4ZeU1lmuMzNfObhbrAvXkV+T49NI8b8YqTPZ5X/YbUBw2xmfzuVY6d8vKs2Ykm0o8vP01f1Q7SYorXUDhpWpwGNvMGvp5PsQl9CqQNIICJ6xqxy1rXpBD31KwYPUy3YxDKZhihZt37GJCVaYrPVT9K/m88PsZiH4M3fqtBy3lWWzKbHm3Eatl+EKbzrFbJb35FwpuS7gO5rw6Fzqd1lF0LkMiwMLBSRSb63J6EkVW87CWDc5ZBNmsxd7fuR+1dvNls"
+                              "value":  "duxj3Oa+Y3FzUXUu6juB5un8tFaY10fPhZDPJff77Cz3QTG9HmiEH1z4KrrzPyHoqxsju3itxhCnGk77viWB/0Ld/MBBbB2BzQEYG70dHOFf9wmeSMylPcehDvXHr6A5ZZ9MlVXnrsSCMukJe9Py62wW7dQABrTUsX2eqwvDVK0kDvlPLSOlp0x4/a6XFV3+Ri2UT5DbVGxNj8X7LOSmSmGAjl6JAjKphqcZUmrqQp7l/n/0eyUMLdA/GztP+deGLqFAIi2bjh2jmAKr21EGUApu4YdFKk8Cyy2b/B2+rvgn9ezCkMykjCDPCosRAGJZ0Xp/ejeLd23WKOaW7tgrVMVM+qHoZxcNVldRZ14cROnerwa8Py4PLvUEkGPm4pgX0OXhmjrVWdlLXGRNm2359fM+iInxCIQn+wVoD4mM9pr3IOZr7QDSUGZtZA7Qky90bkuDc3RtbdHvD47RZbaBQUokSj6fMBb+LAJlFb6NqSAdDe84b9VZybJy5iAaUZSF"
                           }
 }
