@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.1.11",
+    "latestVersion":  "1.1.12",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-07-27T19:54:51+07:00",
-    "buildLabel":  "v20260727-1846",
+    "publishedAt":  "2026-07-31T19:21:12+07:00",
+    "buildLabel":  "v20260731-1859",
     "package":  {
                     "fileName":  "Timerra.rar",
-                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.11/Timerra.rar",
-                    "sha256":  "8bfa2500f07d36114d41fd1ea66771b76f7b7b29af3377c6daea67887d739808",
-                    "sizeBytes":  96183534,
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.12/Timerra.rar",
+                    "sha256":  "fda1a45c8952b5f3ddfec794dbcb92f5277e0545c1588e5f0fc8e8ca4eaae0dc",
+                    "sizeBytes":  96186510,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -17,7 +17,7 @@
     "tvApk":  {
                   "versionName":  "1.1.6",
                   "versionCode":  106,
-                  "buildLabel":  "v20260727-1846",
+                  "buildLabel":  "v20260731-1859",
                   "publishedAt":  "2026-07-27T17:51:44+07:00",
                   "package":  {
                                   "fileName":  "TimerraTV-device-owner-debug.apk",
@@ -86,24 +86,23 @@
                             }
                 },
     "notes":  [
-                  "Self update Server kini menghentikan Watchdog secara terkontrol, memeriksa seluruh file sebelum pemasangan, dan mengganti EXE utama paling akhir.",
-                  "Server menolak status sehat bila komponen instalasi berbeda versi serta memulihkan Updater, Watchdog, dan seluruh web Kasir, App, serta Report dari cache RAR terverifikasi.",
-                  "Rollback updater tetap mencoba memulihkan seluruh komponen dan melaporkan semua file yang gagal, sehingga satu file terkunci tidak menghentikan pemulihan komponen lain.",
-                  "Receipt instalasi memastikan API hanya berjalan setelah paket Server lengkap dan konsisten."
+                  "Paket Durasi dan Paket Jam Fix kini dapat ditandai Khusus Member tanpa mengubah paket yang sudah dimiliki atau billing yang sedang berjalan.",
+                  "Penjualan non-member menyembunyikan paket Khusus Member dan Server tetap menolak transaksi langsung yang mencoba melewati tampilan.",
+                  "Pengaturan batch, daftar paket, dan App Member kini menampilkan serta mempertahankan status Khusus Member secara konsisten."
               ],
     "rollback":  {
                      "enabled":  true,
                      "strategy":  "binary-preserve-data",
                      "recommended":  {
-                                         "version":  "1.1.10",
-                                         "buildLabel":  "v20260727-1725",
-                                         "publishedAt":  "2026-07-27T17:51:44+07:00",
+                                         "version":  "1.1.11",
+                                         "buildLabel":  "v20260727-1846",
+                                         "publishedAt":  "2026-07-27T19:54:51+07:00",
                                          "compatibility":  "binary-preserve-data",
                                          "package":  {
                                                          "fileName":  "Timerra.rar",
-                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.10/Timerra.rar",
-                                                         "sha256":  "d339d500c3ae66fe65e14e9e84f0be28704ac2d6f9a7f640ed0e0c38a22835ae",
-                                                         "sizeBytes":  96138590,
+                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.11/Timerra.rar",
+                                                         "sha256":  "8bfa2500f07d36114d41fd1ea66771b76f7b7b29af3377c6daea67887d739808",
+                                                         "sizeBytes":  96183534,
                                                          "compression":  "rar",
                                                          "extractor":  "unrar",
                                                          "requiresPassword":  true,
@@ -111,20 +110,20 @@
                                                      },
                                          "notes":  [
                                                        "Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.",
-                                                       "Label versi Timerra Kasir dan Timerra App kini disinkronkan langsung dari Server serta memuat ulang UI ketika versi atau build Server berubah.",
-                                                       "File sementara updater desktop dibersihkan setelah aplikasi baru sehat maupun saat update gagal, tanpa menghapus paket cache lokal Server.",
-                                                       "Server menyimpan Timerra.rar yang telah lolos verifikasi secara atomik untuk pembaruan LAN Kasir, App, dan APK serta membersihkan sidecar cache parsial.",
-                                                       "APK membersihkan hasil unduhan update setelah instalasi selesai atau gagal dan menyapu file sementara yang tertinggal."
+                                                       "Self update Server kini menghentikan Watchdog secara terkontrol, memeriksa seluruh file sebelum pemasangan, dan mengganti EXE utama paling akhir.",
+                                                       "Server menolak status sehat bila komponen instalasi berbeda versi serta memulihkan Updater, Watchdog, dan seluruh web Kasir, App, serta Report dari cache RAR terverifikasi.",
+                                                       "Rollback updater tetap mencoba memulihkan seluruh komponen dan melaporkan semua file yang gagal, sehingga satu file terkunci tidak menghentikan pemulihan komponen lain.",
+                                                       "Receipt instalasi memastikan API hanya berjalan setelah paket Server lengkap dan konsisten."
                                                    ]
                                      },
                      "available":  [
 
                                    ]
                  },
-    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.11\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-27T19:54:51+07:00\",\"buildLabel\":\"v20260727-1846\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.11/Timerra.rar\",\"sha256\":\"8bfa2500f07d36114d41fd1ea66771b76f7b7b29af3377c6daea67887d739808\",\"sizeBytes\":96183534,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.6\",\"versionCode\":106,\"buildLabel\":\"v20260727-1846\",\"publishedAt\":\"2026-07-27T17:51:44+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"1e77b1141337c0fbbdb2e5b98c66581a379c7f1cc578ec3863f0f767a37ad926\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"File APK hasil self update dibersihkan setelah status instalasi terminal.\",\"File .part lama dan APK unduhan yang tertinggal dibersihkan otomatis dari cache aplikasi.\",\"Penghapusan dibatasi hanya ke folder unduhan update internal Timerra TV.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Self update Server kini menghentikan Watchdog secara terkontrol, memeriksa seluruh file sebelum pemasangan, dan mengganti EXE utama paling akhir.\",\"Server menolak status sehat bila komponen instalasi berbeda versi serta memulihkan Updater, Watchdog, dan seluruh web Kasir, App, serta Report dari cache RAR terverifikasi.\",\"Rollback updater tetap mencoba memulihkan seluruh komponen dan melaporkan semua file yang gagal, sehingga satu file terkunci tidak menghentikan pemulihan komponen lain.\",\"Receipt instalasi memastikan API hanya berjalan setelah paket Server lengkap dan konsisten.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.10\",\"buildLabel\":\"v20260727-1725\",\"publishedAt\":\"2026-07-27T17:51:44+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.10/Timerra.rar\",\"sha256\":\"d339d500c3ae66fe65e14e9e84f0be28704ac2d6f9a7f640ed0e0c38a22835ae\",\"sizeBytes\":96138590,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Label versi Timerra Kasir dan Timerra App kini disinkronkan langsung dari Server serta memuat ulang UI ketika versi atau build Server berubah.\",\"File sementara updater desktop dibersihkan setelah aplikasi baru sehat maupun saat update gagal, tanpa menghapus paket cache lokal Server.\",\"Server menyimpan Timerra.rar yang telah lolos verifikasi secara atomik untuk pembaruan LAN Kasir, App, dan APK serta membersihkan sidecar cache parsial.\",\"APK membersihkan hasil unduhan update setelah instalasi selesai atau gagal dan menyapu file sementara yang tertinggal.\"]},\"available\":[]}}",
+    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.12\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-07-31T19:21:12+07:00\",\"buildLabel\":\"v20260731-1859\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.12/Timerra.rar\",\"sha256\":\"fda1a45c8952b5f3ddfec794dbcb92f5277e0545c1588e5f0fc8e8ca4eaae0dc\",\"sizeBytes\":96186510,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.6\",\"versionCode\":106,\"buildLabel\":\"v20260731-1859\",\"publishedAt\":\"2026-07-27T17:51:44+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"1e77b1141337c0fbbdb2e5b98c66581a379c7f1cc578ec3863f0f767a37ad926\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"File APK hasil self update dibersihkan setelah status instalasi terminal.\",\"File .part lama dan APK unduhan yang tertinggal dibersihkan otomatis dari cache aplikasi.\",\"Penghapusan dibatasi hanya ke folder unduhan update internal Timerra TV.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Paket Durasi dan Paket Jam Fix kini dapat ditandai Khusus Member tanpa mengubah paket yang sudah dimiliki atau billing yang sedang berjalan.\",\"Penjualan non-member menyembunyikan paket Khusus Member dan Server tetap menolak transaksi langsung yang mencoba melewati tampilan.\",\"Pengaturan batch, daftar paket, dan App Member kini menampilkan serta mempertahankan status Khusus Member secara konsisten.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.11\",\"buildLabel\":\"v20260727-1846\",\"publishedAt\":\"2026-07-27T19:54:51+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.11/Timerra.rar\",\"sha256\":\"8bfa2500f07d36114d41fd1ea66771b76f7b7b29af3377c6daea67887d739808\",\"sizeBytes\":96183534,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Self update Server kini menghentikan Watchdog secara terkontrol, memeriksa seluruh file sebelum pemasangan, dan mengganti EXE utama paling akhir.\",\"Server menolak status sehat bila komponen instalasi berbeda versi serta memulihkan Updater, Watchdog, dan seluruh web Kasir, App, serta Report dari cache RAR terverifikasi.\",\"Rollback updater tetap mencoba memulihkan seluruh komponen dan melaporkan semua file yang gagal, sehingga satu file terkunci tidak menghentikan pemulihan komponen lain.\",\"Receipt instalasi memastikan API hanya berjalan setelah paket Server lengkap dan konsisten.\"]},\"available\":[]}}",
     "manifestSignature":  {
                               "algorithm":  "RSA-SHA256",
                               "keyId":  "timerra-owner-2026-01",
-                              "value":  "GwNDajA+Xo7sMXthH7vIRr2n+7A8aEbb/+9tU/75oG14DQlgkcWaVOb51hw1Ota7E9KIsELBxA2emIRLGgkzNADsYC0y6O3/b384lLsk8NpooiMXB9iA+Tnt67cO9jRAfjQdjMl9cJNE4nSTkt6dEpnSOsYlv3ZzwZI4yJqq778OWOAZFQDI50b9TuwUJ2zcEJ4ECZOPh6vM0IGLte4KQdD2y1xcF4GPJb0E9TarVjyNXt8fOy5CvFDotxp7TPkiDCk0wEZQhijooyGLJU1p7CDQJ8GfoslMqmiMz81L2oVtkjjErg8OzYBsg5ahbMdnmxaMBGUcZCxiaK3GKgAxseP46eaSv8KVKvDqNol/5M9a9oSArmFzPmEUN+ZWKE5C7yugdc2475fMAsgX0rf6kS+zM5bWHL4mviPfO0cnT/wLJHr1Lv7Yjnd8IAX6IRgCFNUakLr3CrTrGAt3Vo3xe9FvBlfte1lNdIVIjl6ZDzTWhlR53MgWPUQSbVmOOi4u"
+                              "value":  "rrFqra3ru+xxC9rN5RJ1m//AjXkR5295PSpwtt4aZaNzK/c3dYm6ZEGO38MkxnjUk7J/rgIF30X0gffZncEprGcHsElX7xxmYTo7BKlouwapKB0rUjsCRZvWfBo+Fy8Z0K0g/syCSmiNNE/SM+eTBgWEZets6mxzBHiN2qqL+sxgoIDLpqMcgnyLx1BAKmPJICBSNtjoFCObqKzVehYEXrgfKWg4wgL1+OpH5OaNGXLzLn3ptumZngrcbOMp6U+96ndHh4nd8C8/dHpm3yr2L9lPK2vwa0TOYPcq1Ob/PifPsP20pCRgV7JjkoGBjTYydypOc7HV8yal90Q8Y3f7IoTGJ8OnZVYdxJ6pbDgj0ledzJT11bpYyxNXnL43pt8trK022HQpGjdrr3LDZZBn42d/O3LOH0Xzs0Yp993tNfOK1GguxXnjUf1/SvFF1bMZ5wVpk3fkvkx0E5lAhOXDqrSZFdUKUahofSgA7E6UPkDmI0VYpNfsgZkdRe7qUwv9"
                           }
 }
