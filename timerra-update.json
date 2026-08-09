@@ -1,14 +1,14 @@
 {
     "app":  "Timerra",
-    "latestVersion":  "1.1.15",
+    "latestVersion":  "1.1.16",
     "minSupportedVersion":  "0.1.0",
-    "publishedAt":  "2026-08-02T19:25:49+07:00",
-    "buildLabel":  "v20260802-1900",
+    "publishedAt":  "2026-08-09T18:18:26+07:00",
+    "buildLabel":  "v20260809-1758",
     "package":  {
                     "fileName":  "Timerra.rar",
-                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.15/Timerra.rar",
-                    "sha256":  "3420f442615f35f5ea999faefc0f26001a3bb17fa9e4cda672492ca4ca038019",
-                    "sizeBytes":  96204318,
+                    "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.16/Timerra.rar",
+                    "sha256":  "3119632b481c67055d456f62d7ab677f5001c0a6b8e9a381ca955176c878447b",
+                    "sizeBytes":  96194846,
                     "compression":  "rar",
                     "extractor":  "unrar",
                     "requiresPassword":  true,
@@ -86,24 +86,23 @@
                             }
                 },
     "notes":  [
-                  "Sisa paket durasi member kini kembali ke paket asal saat logout atau sesi dihentikan tanpa kehilangan masa aktifnya.",
-                  "Paket durasi bertumpuk tetap dipisahkan berdasarkan prioritas dan tanggal kedaluwarsa masing-masing.",
-                  "Data paket Sisa dari versi lama yang kehilangan masa aktif dipulihkan otomatis dari timestamp paket asal yang tersimpan.",
-                  "Masa aktif poin tetap dipertahankan saat poin dipakai sebagian dan dibersihkan otomatis ketika saldo poin menjadi nol."
+                  "Pulihkan Billing kini mengembalikan paket durasi aktif ke durasi aslinya tanpa Paket Kompensasi dan tanpa menambah pendapatan.",
+                  "Pemulihan member dan non-member tetap mempertahankan sesi, tercatat dalam audit, idempoten, serta menolak Paket Jam Fix.",
+                  "Panel Paket Durasi dan Paket Jam Fix selalu terlihat, sementara isi dropdown mengikuti kategori billing yang dipilih."
               ],
     "rollback":  {
                      "enabled":  true,
                      "strategy":  "binary-preserve-data",
                      "recommended":  {
-                                         "version":  "1.1.14",
-                                         "buildLabel":  "v20260802-1826",
-                                         "publishedAt":  "2026-08-02T18:53:28+07:00",
+                                         "version":  "1.1.15",
+                                         "buildLabel":  "v20260802-1900",
+                                         "publishedAt":  "2026-08-02T19:25:49+07:00",
                                          "compatibility":  "binary-preserve-data",
                                          "package":  {
                                                          "fileName":  "Timerra.rar",
-                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.14/Timerra.rar",
-                                                         "sha256":  "83fdc374b6fbab3261bb5fe155a3c659bf9e8c0a5d8ca24c5d37cf3c32c8a058",
-                                                         "sizeBytes":  96209246,
+                                                         "url":  "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.15/Timerra.rar",
+                                                         "sha256":  "3420f442615f35f5ea999faefc0f26001a3bb17fa9e4cda672492ca4ca038019",
+                                                         "sizeBytes":  96204318,
                                                          "compression":  "rar",
                                                          "extractor":  "unrar",
                                                          "requiresPassword":  true,
@@ -113,6 +112,7 @@
                                                        "Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.",
                                                        "Sisa paket durasi member kini kembali ke paket asal saat logout atau sesi dihentikan tanpa kehilangan masa aktifnya.",
                                                        "Paket durasi bertumpuk tetap dipisahkan berdasarkan prioritas dan tanggal kedaluwarsa masing-masing.",
+                                                       "Data paket Sisa dari versi lama yang kehilangan masa aktif dipulihkan otomatis dari timestamp paket asal yang tersimpan.",
                                                        "Masa aktif poin tetap dipertahankan saat poin dipakai sebagian dan dibersihkan otomatis ketika saldo poin menjadi nol."
                                                    ]
                                      },
@@ -120,10 +120,10 @@
 
                                    ]
                  },
-    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.15\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-08-02T19:25:49+07:00\",\"buildLabel\":\"v20260802-1900\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.15/Timerra.rar\",\"sha256\":\"3420f442615f35f5ea999faefc0f26001a3bb17fa9e4cda672492ca4ca038019\",\"sizeBytes\":96204318,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.6\",\"versionCode\":106,\"buildLabel\":\"v20260731-1859\",\"publishedAt\":\"2026-07-27T17:51:44+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"1e77b1141337c0fbbdb2e5b98c66581a379c7f1cc578ec3863f0f767a37ad926\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"File APK hasil self update dibersihkan setelah status instalasi terminal.\",\"File .part lama dan APK unduhan yang tertinggal dibersihkan otomatis dari cache aplikasi.\",\"Penghapusan dibatasi hanya ke folder unduhan update internal Timerra TV.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Sisa paket durasi member kini kembali ke paket asal saat logout atau sesi dihentikan tanpa kehilangan masa aktifnya.\",\"Paket durasi bertumpuk tetap dipisahkan berdasarkan prioritas dan tanggal kedaluwarsa masing-masing.\",\"Data paket Sisa dari versi lama yang kehilangan masa aktif dipulihkan otomatis dari timestamp paket asal yang tersimpan.\",\"Masa aktif poin tetap dipertahankan saat poin dipakai sebagian dan dibersihkan otomatis ketika saldo poin menjadi nol.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.14\",\"buildLabel\":\"v20260802-1826\",\"publishedAt\":\"2026-08-02T18:53:28+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.14/Timerra.rar\",\"sha256\":\"83fdc374b6fbab3261bb5fe155a3c659bf9e8c0a5d8ca24c5d37cf3c32c8a058\",\"sizeBytes\":96209246,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Sisa paket durasi member kini kembali ke paket asal saat logout atau sesi dihentikan tanpa kehilangan masa aktifnya.\",\"Paket durasi bertumpuk tetap dipisahkan berdasarkan prioritas dan tanggal kedaluwarsa masing-masing.\",\"Masa aktif poin tetap dipertahankan saat poin dipakai sebagian dan dibersihkan otomatis ketika saldo poin menjadi nol.\"]},\"available\":[]}}",
+    "signedPayload":  "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.16\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-08-09T18:18:26+07:00\",\"buildLabel\":\"v20260809-1758\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.16/Timerra.rar\",\"sha256\":\"3119632b481c67055d456f62d7ab677f5001c0a6b8e9a381ca955176c878447b\",\"sizeBytes\":96194846,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.6\",\"versionCode\":106,\"buildLabel\":\"v20260731-1859\",\"publishedAt\":\"2026-07-27T17:51:44+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"1e77b1141337c0fbbdb2e5b98c66581a379c7f1cc578ec3863f0f767a37ad926\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"File APK hasil self update dibersihkan setelah status instalasi terminal.\",\"File .part lama dan APK unduhan yang tertinggal dibersihkan otomatis dari cache aplikasi.\",\"Penghapusan dibatasi hanya ke folder unduhan update internal Timerra TV.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Pulihkan Billing kini mengembalikan paket durasi aktif ke durasi aslinya tanpa Paket Kompensasi dan tanpa menambah pendapatan.\",\"Pemulihan member dan non-member tetap mempertahankan sesi, tercatat dalam audit, idempoten, serta menolak Paket Jam Fix.\",\"Panel Paket Durasi dan Paket Jam Fix selalu terlihat, sementara isi dropdown mengikuti kategori billing yang dipilih.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.15\",\"buildLabel\":\"v20260802-1900\",\"publishedAt\":\"2026-08-02T19:25:49+07:00\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.15/Timerra.rar\",\"sha256\":\"3420f442615f35f5ea999faefc0f26001a3bb17fa9e4cda672492ca4ca038019\",\"sizeBytes\":96204318,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Sisa paket durasi member kini kembali ke paket asal saat logout atau sesi dihentikan tanpa kehilangan masa aktifnya.\",\"Paket durasi bertumpuk tetap dipisahkan berdasarkan prioritas dan tanggal kedaluwarsa masing-masing.\",\"Data paket Sisa dari versi lama yang kehilangan masa aktif dipulihkan otomatis dari timestamp paket asal yang tersimpan.\",\"Masa aktif poin tetap dipertahankan saat poin dipakai sebagian dan dibersihkan otomatis ketika saldo poin menjadi nol.\"]},\"available\":[]}}",
     "manifestSignature":  {
                               "algorithm":  "RSA-SHA256",
                               "keyId":  "timerra-owner-2026-01",
-                              "value":  "yOzK4WRa3s3kKWIbK/LLJ2IEouWfN+VJkS3KEJDvgQtMVTcBTSf7h7NiFQW++4THrqC5LQrPUi55rzpri6KQIy8z6yWTAgD5ESTYmujEhBL/uZEtDqwpYRI1rjOyi/RPjJO4xBkkpsN86fhei6Nm+1THCHjJSfyMlewal4GVcHeuWADKptDx/fSEIvzvFBmiK81ruuZMaoVsf5Lx53+t527mr6bt0jHM5yaFHNT9BkwnEqxoalkeg0yCMqJJVHq232xumIRw/kUizciPyNOGDhFO/+JoGE7DXLa1QrWJvXT4JeD1F1Quh8Aa7fgUw+h4LwGS5w19byg91imCt/EbcObRwdTmpja33xvKe4tkuEOAmSwuyKeRJ+WYSX4r0jcsRlkkyQ7rf5GEXxsAmXz53xUEX5DlncoOWISqer+LhyY8vVnZ+iZ2u2se1SrCioOkCBfHwbFqwZ0wP3a7K8GRov4Vm3WR0DbHWoAmlySH82A83qaHlu5bWQFXLmlIUKap"
+                              "value":  "ZAd0BcJay2ngdYOOfQ8c+OEQcjgNLgwcKjS6xY1TJUGSvun5aZ/WZ3//Khc8Xp8Y8ge7P3NrGaGWDAu9kIMlDJJdlMePeql96Ys4tDontTnZ+zxyUy4JK/w7uqhu0bYb0J2HyyPU3nS+Yo9IPkzAbsi0wWRZGrdilhotSSB/IPPHPSFRXFOsJLcEOqURMAnD6kmp0XRXR7viebHoWNuTJ0/H4prZP1Lft/oSWjvAazoNNKKJgH3uogF1p37sbmw8ocJ7xeq72U9DVNybl74uuSfgKMw+/x9cteuoe01nB7WBTS8xLFz4XGtuXh9LE+5N4ffz+J1/jTLG39MKENfUv8dawjCtOzRDbAQ2EkdDNTT/F1AtdDrXQDcWs1pTiXEm/Dpfzqr6+unlTL066MhTI+l97nUi4Kx1prdLiTEpifYuWpUVYE/lG/XnM+Ntrk/qrtXVAXCJ0uBoWffWKPEPbG/d4ahdfeLe5inpC8eKgFGi3Y8elMfrmbC9+t3G88lB"
                           }
 }
