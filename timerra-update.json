@@ -1,28 +1,28 @@
 {
   "app": "Timerra",
-  "latestVersion": "1.1.17",
+  "latestVersion": "1.1.18",
   "minSupportedVersion": "0.1.0",
-  "publishedAt": "2026-08-24T07:04:43+07:00",
-  "buildLabel": "v20260824-0640",
+  "publishedAt": "2026-08-24T14:20:42+07:00",
+  "buildLabel": "v20260824-1357",
   "package": {
     "fileName": "Timerra.rar",
-    "url": "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.17/Timerra.rar",
-    "sha256": "4652ebd8551f4cd00543a9d26efacd1480f9356ab436e5e09e2e8645384c602c",
-    "sizeBytes": 96210270,
+    "url": "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.18/Timerra.rar",
+    "sha256": "16ba91f15e81e61b3cc1b0c3915538e5be3b610ddd248d42bd0a9341c68b9fe2",
+    "sizeBytes": 96240014,
     "compression": "rar",
     "extractor": "unrar",
     "requiresPassword": true,
     "encryptedFileNames": true
   },
   "tvApk": {
-    "versionName": "1.1.6",
-    "versionCode": 106,
-    "buildLabel": "v20260731-1859",
-    "publishedAt": "2026-07-27T17:51:44+07:00",
+    "versionName": "1.1.7",
+    "versionCode": 107,
+    "buildLabel": "v20260824-1357",
+    "publishedAt": "2026-08-24T14:20:42+07:00",
     "package": {
       "fileName": "TimerraTV-device-owner-debug.apk",
-      "sha256": "1e77b1141337c0fbbdb2e5b98c66581a379c7f1cc578ec3863f0f767a37ad926",
-      "sizeBytes": 11990910,
+      "sha256": "3a13e73842c7b8c1874aada184a8c3a99f388e0cfd614b6bc633b28b045384f0",
+      "sizeBytes": 11990906,
       "compression": "apk",
       "requiresPassword": false,
       "delivery": "server-cache",
@@ -30,9 +30,9 @@
       "serverMetadataPath": "/api/tv/apk-update"
     },
     "notes": [
-      "File APK hasil self update dibersihkan setelah status instalasi terminal.",
-      "File .part lama dan APK unduhan yang tertinggal dibersihkan otomatis dari cache aplikasi.",
-      "Penghapusan dibatasi hanya ke folder unduhan update internal Timerra TV."
+      "Alamat Server pusat diterima dari Server hanya setelah kandidat berhasil diuji dengan identitas TV yang aktif.",
+      "Perubahan IP Server dapat dipulihkan melalui discovery LAN dan alamat terakhir yang pernah berhasil digunakan.",
+      "Perubahan alamat manual mereset identitas endpoint lama tanpa mengubah ID TV atau kode koneksi."
     ]
   },
   "targets": {
@@ -86,23 +86,23 @@
     }
   },
   "notes": [
-    "API lokal, billing, Kasir, App, dan TV di jaringan LAN tetap berjalan saat internet putus lama dengan fallback waktu yang tersimpan.",
-    "Jam efektif memakai anchor terpercaya, monotonic clock, dan checkpoint satu menit; sinkronisasi ulang dilakukan perlahan tanpa lompatan timer.",
-    "Server Manager kini memisahkan status PostgreSQL, API Lokal, Internet, dan Sumber Waktu agar gangguan WAN tidak terbaca sebagai API offline."
+    "Password database Server tersimpan atomik dengan cadangan terenkripsi dan tidak kembali ke password default saat secret bermasalah.",
+    "Admin dapat menetapkan IP dan port Server utama untuk APK TV dari menu Tampilan TV di Timerra Kasir.",
+    "APK memverifikasi alamat Server baru sebelum berpindah serta dapat menemukan kembali Server yang sama melalui jaringan LAN."
   ],
   "rollback": {
     "enabled": true,
     "strategy": "binary-preserve-data",
     "recommended": {
-      "version": "1.1.16",
-      "buildLabel": "v20260809-1758",
-      "publishedAt": "08/09/2026 18:18:26",
+      "version": "1.1.17",
+      "buildLabel": "v20260824-0640",
+      "publishedAt": "08/24/2026 07:04:43",
       "compatibility": "binary-preserve-data",
       "package": {
         "fileName": "Timerra.rar",
-        "url": "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.16/Timerra.rar",
-        "sha256": "3119632b481c67055d456f62d7ab677f5001c0a6b8e9a381ca955176c878447b",
-        "sizeBytes": 96194846,
+        "url": "https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.17/Timerra.rar",
+        "sha256": "4652ebd8551f4cd00543a9d26efacd1480f9356ab436e5e09e2e8645384c602c",
+        "sizeBytes": 96210270,
         "compression": "rar",
         "extractor": "unrar",
         "requiresPassword": true,
@@ -110,17 +110,17 @@
       },
       "notes": [
         "Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.",
-        "Pulihkan Billing kini mengembalikan paket durasi aktif ke durasi aslinya tanpa Paket Kompensasi dan tanpa menambah pendapatan.",
-        "Pemulihan member dan non-member tetap mempertahankan sesi, tercatat dalam audit, idempoten, serta menolak Paket Jam Fix.",
-        "Panel Paket Durasi dan Paket Jam Fix selalu terlihat, sementara isi dropdown mengikuti kategori billing yang dipilih."
+        "API lokal, billing, Kasir, App, dan TV di jaringan LAN tetap berjalan saat internet putus lama dengan fallback waktu yang tersimpan.",
+        "Jam efektif memakai anchor terpercaya, monotonic clock, dan checkpoint satu menit; sinkronisasi ulang dilakukan perlahan tanpa lompatan timer.",
+        "Server Manager kini memisahkan status PostgreSQL, API Lokal, Internet, dan Sumber Waktu agar gangguan WAN tidak terbaca sebagai API offline."
       ]
     },
     "available": []
   },
-  "signedPayload": "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.17\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-08-24T07:04:43+07:00\",\"buildLabel\":\"v20260824-0640\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.17/Timerra.rar\",\"sha256\":\"4652ebd8551f4cd00543a9d26efacd1480f9356ab436e5e09e2e8645384c602c\",\"sizeBytes\":96210270,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.6\",\"versionCode\":106,\"buildLabel\":\"v20260731-1859\",\"publishedAt\":\"2026-07-27T17:51:44+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"1e77b1141337c0fbbdb2e5b98c66581a379c7f1cc578ec3863f0f767a37ad926\",\"sizeBytes\":11990910,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"File APK hasil self update dibersihkan setelah status instalasi terminal.\",\"File .part lama dan APK unduhan yang tertinggal dibersihkan otomatis dari cache aplikasi.\",\"Penghapusan dibatasi hanya ke folder unduhan update internal Timerra TV.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"API lokal, billing, Kasir, App, dan TV di jaringan LAN tetap berjalan saat internet putus lama dengan fallback waktu yang tersimpan.\",\"Jam efektif memakai anchor terpercaya, monotonic clock, dan checkpoint satu menit; sinkronisasi ulang dilakukan perlahan tanpa lompatan timer.\",\"Server Manager kini memisahkan status PostgreSQL, API Lokal, Internet, dan Sumber Waktu agar gangguan WAN tidak terbaca sebagai API offline.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.16\",\"buildLabel\":\"v20260809-1758\",\"publishedAt\":\"08/09/2026 18:18:26\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.16/Timerra.rar\",\"sha256\":\"3119632b481c67055d456f62d7ab677f5001c0a6b8e9a381ca955176c878447b\",\"sizeBytes\":96194846,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"Pulihkan Billing kini mengembalikan paket durasi aktif ke durasi aslinya tanpa Paket Kompensasi dan tanpa menambah pendapatan.\",\"Pemulihan member dan non-member tetap mempertahankan sesi, tercatat dalam audit, idempoten, serta menolak Paket Jam Fix.\",\"Panel Paket Durasi dan Paket Jam Fix selalu terlihat, sementara isi dropdown mengikuti kategori billing yang dipilih.\"]},\"available\":[]}}",
+  "signedPayload": "{\"app\":\"Timerra\",\"latestVersion\":\"1.1.18\",\"minSupportedVersion\":\"0.1.0\",\"publishedAt\":\"2026-08-24T14:20:42+07:00\",\"buildLabel\":\"v20260824-1357\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.18/Timerra.rar\",\"sha256\":\"16ba91f15e81e61b3cc1b0c3915538e5be3b610ddd248d42bd0a9341c68b9fe2\",\"sizeBytes\":96240014,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"tvApk\":{\"versionName\":\"1.1.7\",\"versionCode\":107,\"buildLabel\":\"v20260824-1357\",\"publishedAt\":\"2026-08-24T14:20:42+07:00\",\"package\":{\"fileName\":\"TimerraTV-device-owner-debug.apk\",\"sha256\":\"3a13e73842c7b8c1874aada184a8c3a99f388e0cfd614b6bc633b28b045384f0\",\"sizeBytes\":11990906,\"compression\":\"apk\",\"requiresPassword\":false,\"delivery\":\"server-cache\",\"archivePath\":\"Timerra_Server_Portable\\\\apk-cache\\\\TimerraTV-device-owner-debug.apk\",\"serverMetadataPath\":\"/api/tv/apk-update\"},\"notes\":[\"Alamat Server pusat diterima dari Server hanya setelah kandidat berhasil diuji dengan identitas TV yang aktif.\",\"Perubahan IP Server dapat dipulihkan melalui discovery LAN dan alamat terakhir yang pernah berhasil digunakan.\",\"Perubahan alamat manual mereset identitas endpoint lama tanpa mengubah ID TV atau kode koneksi.\"]},\"targets\":{\"server\":{\"portableDir\":\"Timerra_Server_Portable\",\"executable\":\"Timerra Server.exe\",\"replace\":[\"Timerra Server.exe\",\"Timerra Updater.exe\",\"web/operator/**\",\"web/server-manager/**\",\"db/migrations/**\",\"tools/**\",\"third_party/**\",\"web/report/**\",\"apk-cache/**\",\"Timerra Server Watchdog.exe\"],\"preserve\":[\"config/**\",\"database/data/**\",\"backups/**\",\"logs/**\",\"exports/**\",\"updates/**\"]},\"kasir\":{\"portableDir\":\"Timerra_Kasir_Portable\",\"executable\":\"Timerra Kasir.exe\",\"replace\":[\"Timerra Kasir.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]},\"app\":{\"portableDir\":\"Timerra_App_Portable\",\"executable\":\"Timerra App.exe\",\"replace\":[\"Timerra App.exe\",\"Timerra Updater.exe\"],\"preserve\":[\"config/**\",\"logs/**\"]}},\"notes\":[\"Password database Server tersimpan atomik dengan cadangan terenkripsi dan tidak kembali ke password default saat secret bermasalah.\",\"Admin dapat menetapkan IP dan port Server utama untuk APK TV dari menu Tampilan TV di Timerra Kasir.\",\"APK memverifikasi alamat Server baru sebelum berpindah serta dapat menemukan kembali Server yang sama melalui jaringan LAN.\"],\"rollback\":{\"enabled\":true,\"strategy\":\"binary-preserve-data\",\"recommended\":{\"version\":\"1.1.17\",\"buildLabel\":\"v20260824-0640\",\"publishedAt\":\"08/24/2026 07:04:43\",\"compatibility\":\"binary-preserve-data\",\"package\":{\"fileName\":\"Timerra.rar\",\"url\":\"https://github.com/artphoney12/Timerra-owner/releases/download/v1.1.17/Timerra.rar\",\"sha256\":\"4652ebd8551f4cd00543a9d26efacd1480f9356ab436e5e09e2e8645384c602c\",\"sizeBytes\":96210270,\"compression\":\"rar\",\"extractor\":\"unrar\",\"requiresPassword\":true,\"encryptedFileNames\":true},\"notes\":[\"Rollback otomatis mempertahankan database, config, logs, backup, export, dan cache update.\",\"API lokal, billing, Kasir, App, dan TV di jaringan LAN tetap berjalan saat internet putus lama dengan fallback waktu yang tersimpan.\",\"Jam efektif memakai anchor terpercaya, monotonic clock, dan checkpoint satu menit; sinkronisasi ulang dilakukan perlahan tanpa lompatan timer.\",\"Server Manager kini memisahkan status PostgreSQL, API Lokal, Internet, dan Sumber Waktu agar gangguan WAN tidak terbaca sebagai API offline.\"]},\"available\":[]}}",
   "manifestSignature": {
     "algorithm": "RSA-SHA256",
     "keyId": "timerra-owner-2026-01",
-    "value": "KzBm2tZ1yKaMjyLtktdl0FLNvxUrKHBbwp2hqmge8Z5G2yu+GzYbWLGmqBezEDmO6MK8ap/yxkm9FAhw4Vponk7cYZrVDP00KhX6ObBH9KjRmcGFxk9QlozWK/FzCuhLg2KdAxityyN6aBFzzaFpSgPgDFw8Zf1JrTsEYxhRSPbS9CBAyHImvkOm7KjVKZ2AJYkrhnlnUgZQELae5aE6/cB8CGHWT9JCpA8K6Cj7SwbkK1nVPyCIJQs520owMIwd0HTnJ71xr+arfOj9/yWBDzP6Cw3Ud2mYj2VoZ1XRyCE3jAEQ9S8t6eeokZVGv1nrUEvLij6RdSVamFgExoZsVznqtDdpb8vDndJyNDfIexFMfFLszaHsEXaAekILoRKfocJQ+lvlBIIEc19Uf1D8n0/TXFXBL0CH23UCuPaVjkH/RftDY8oJXUMWyONRjZFQPZzK+85VUsQluCYmr8137IAKd+akyqLZWjvHyMxgsrsXG8Lw3jeMVGm4pymSd9Kz"
+    "value": "Y88fuyA7y8V1id09k5o+nEjCUbIFX8eHoA7UOKgf6Mia+zf5RWA0g7SSDw7WVw06zMlX53Jq0CNsOdVPZA0ZGWDf0/GxAodkZoxHJfufR7MRqglpD1osNrNXBfBAaV9EQXgPcvvHEBJe9zZBrP0C0aPsdIH08F/Ro+RBYDiClUBDNXKbwwVAebfC3+In8V1WPGvZCd5q9B2c7eOYFP9oc4zTDpFXb9gppm1knIDvgG6QhnYxT+14EWzDPvqvdm+Fc8/mOl2ewYqGHMFCBAmMs7PY9zV1+3RuoGqXGj9E9QLUKjt942zIalMhWR0x2g8KxN31cCbpA8wczZMLueFe6A6d6S0RVgd2mT+O8bfOe6gkJPybu7p39FyH/KAoUzYhLOKJmBVeqnHrnMBXkSozCoMtHKhheVZF/y6IENfxoQ2bGS8joAS69B4ZeerGFQDF7aZ6SMkGj5laX+QXIfAmkf5QmdwHXhfc43tuDlJCCzxHr0lBWl6NAzSbztJMtnU5"
   }
 }
